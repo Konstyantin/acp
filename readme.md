@@ -1,50 +1,114 @@
-## Laravel 5.6 Boilerplate
+## Camperfans
 
-[![Latest Stable Version](https://poser.pugx.org/rappasoft/laravel-5-boilerplate/v/stable)](https://packagist.org/packages/rappasoft/laravel-5-boilerplate)
-[![Latest Unstable Version](https://poser.pugx.org/rappasoft/laravel-5-boilerplate/v/unstable)](https://packagist.org/packages/rappasoft/laravel-5-boilerplate) 
-[![StyleCI](https://styleci.io/repos/30171828/shield?style=plastic)](https://styleci.io/repos/30171828/shield?style=plastic)
-[![CircleCI](https://circleci.com/gh/rappasoft/laravel-5-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/rappasoft/laravel-5-boilerplate/tree/master)
+### 1.Clone
 
-### Official Documentation
+```
+git clone https://bitbucket.org/pandalaravel/acp_v1
+```
 
-[Click here for the official documentation](http://laravel-boilerplate.com)
+### 2. Environment Files
 
-### Slack Channel
+This project ships with a .env.example file in the root of the project.
 
-Please join us in our Slack channel to get faster responses to your questions. Get your invite here: https://laravel-5-boilerplate.herokuapp.com
+You must rename this file to just .env
 
-### Laravel 5.5
+Note: Make sure you have hidden files shown on your system.
 
-You can download the last build of Laravel 5.5 [here](https://github.com/rappasoft/laravel-5-boilerplate/tree/Legacy_5.5).
+```
+cp .env.example .env
+```
 
-### Laravel 5.4
+### 3. Composer
 
-You can download the last build of Laravel 5.4 [here](https://github.com/rappasoft/laravel-5-boilerplate/tree/Legacy_5.4).
+Laravel project dependencies are managed through the PHP Composer tool. The first step is to install the depencencies by navigating into your project in terminal and typing this command:
 
-### Introduction
+```
+composer install
+```
 
-Laravel Boilerplate provides you with a massive head start on any size web application. It comes with a full featured access control system out of the box with an easy to learn API and is built on a Twitter Bootstrap foundation with a front and backend architecture. We have put a lot of work into it and we hope it serves you well and saves you time!
+### 4. NPM/Yarn
 
-### Wiki
+In order to install the Javascript packages for frontend development, you will need the Node Package Manager, and optionally the Yarn Package Manager by Facebook (Recommended)
 
-Please view the [wiki](https://github.com/rappasoft/laravel-5-boilerplate/wiki) for a list of [features](https://github.com/rappasoft/laravel-5-boilerplate/wiki#features).
+If you only have NPM installed you have to run this command from the root of the project:
 
-### Issues
+```
+npm install
+```
 
-If you come across any issues please [report them here](https://github.com/rappasoft/Laravel-5-Boilerplate/issues).
+If you have Yarn installed, run this instead from the root of the project:
 
-### Contributing
+```
+yarn
+```
 
-Thank you for considering contributing to the Laravel Boilerplate project! Please feel free to make any pull requests, or e-mail me a feature request you would like to see in the future to Anthony Rappa at rappa819@gmail.com.
+### 5. Create Database
 
-### Security Vulnerabilities
+You must create your database on your server and on your **.env** file update the following lines:
 
-If you discover a security vulnerability within this boilerplate, please send an e-mail to Anthony Rappa at rappa819@gmail.com, or create a pull request if possible. All security vulnerabilities will be promptly addressed. Please reference [this page](https://github.com/rappasoft/laravel-5-boilerplate/wiki/7.-Security-Fixes) to make sure you are up to date.
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+```
 
-### Donations
+### 6. Artisan Commands
 
-If you would like to help the continued efforts of this project, any size [donations](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JJWUZ4E9S9SFG&lc=US&item_name=Laravel%205%20Boilerplate&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted) are welcomed and highly appreciated.
+The first thing we are going to so is set the key that Laravel will use when doing encryption.
 
-### License
+```
+php artisan key:generate
+```
 
-MIT: [http://anthony.mit-license.org](http://anthony.mit-license.org)
+You should see a green message stating your key was successfully generated. As well as you should see the APP_KEY variable in your .env file reflected.
+
+It's time to see if your database credentials are correct.
+
+We are going to run the built in migrations to create the database tables:
+
+```
+php artisan migrate
+```
+
+Now seed the database with:
+
+```
+php artisan db:seed
+```
+
+You should get a message for each file seeded, you should see the information in your database tables.
+
+After your project is installed you must run this command to link your public storage folder for user avatar uploads:
+
+```
+php artisan storage:link
+```
+
+### 7. NPM Run '*'
+
+Now that you have the database tables and default rows, you need to build the styles and scripts.
+
+These files are generated using Laravel Mix, which is a wrapper around many tools, and works off the webpack.mix.js in the root of the project.
+
+You can build with:
+
+```
+npm run <command>
+```
+
+The available commands are listed at the top of the package.json file under the 'scripts' key.
+
+You will see a lot of information flash on the screen and then be provided with a table at the end explaining what was compiled and where the files live.
+
+At this point you are done, you should be able to hit the project in your local browser and see the project, as well as be able to log in with the administrator and view the backend.
+
+### 8. Login
+
+The administrator credentials are:
+
+**Username:** admin@admin.com
+
+**Password:** 1234
