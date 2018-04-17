@@ -1,65 +1,81 @@
-<div class="sidebar">
-    <nav class="sidebar-nav">
-        <ul class="nav">
-            <li class="nav-title">
-                {{ __('menus.backend.sidebar.general') }}
-            </li>
+<sidebar id="sidebar">
+    <div class="logo u-bg-primary" slot="start">
+        <img src="{{asset('coverui/images/logo-white.svg')}}">
+    </div>
 
-            <li class="nav-item">
-                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="{{ route('admin.dashboard') }}"><i class="icon-speedometer"></i> {{ __('menus.backend.sidebar.dashboard') }}</a>
-            </li>
+    <ul class="c-menu c-menu--dark" v-menu slot="content">
+        <li class="c-menu__item">
+            <a href="{{route('admin.dashboard')}}" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-grid"></i>
+                </div>
 
-            <li class="nav-title">
-                {{ __('menus.backend.sidebar.system') }}
-            </li>
+                <div class="c-menu__text">Dashboard</div>
 
-            @if ($logged_in_user->isAdmin())
-                <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/auth*'), 'open') }}">
-                    <a class="nav-link nav-dropdown-toggle" href="#">
-                        <i class="icon-user"></i> {{ __('menus.backend.access.title') }}
+                <div class="c-menu__after"></div>
+            </a>
+        </li>
 
-                        @if ($pending_approval > 0)
-                            <span class="badge badge-danger">{{ $pending_approval }}</span>
-                        @endif
-                    </a>
+        <li class="c-menu__item">
+            <a href="{{route('admin.dashboard')}}" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-phone"></i>
+                </div>
 
-                    <ul class="nav-dropdown-items">
-                        <li class="nav-item">
-                            <a class="nav-link {{ active_class(Active::checkUriPattern('admin/auth/user*')) }}" href="{{ route('admin.auth.user.index') }}">
-                                {{ __('labels.backend.access.users.management') }}
+                <div class="c-menu__text">Contacts</div>
 
-                                @if ($pending_approval > 0)
-                                    <span class="badge badge-danger">{{ $pending_approval }}</span>
-                                @endif
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link {{ active_class(Active::checkUriPattern('admin/auth/role*')) }}" href="{{ route('admin.auth.role.index') }}">
-                                {{ __('labels.backend.access.roles.management') }}
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            @endif
+                <div class="c-menu__after"></div>
+            </a>
+        </li>
 
-            <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/log-viewer*'), 'open') }}">
-                <a class="nav-link nav-dropdown-toggle" href="#">
-                    <i class="icon-list"></i> {{ __('menus.backend.log-viewer.main') }}
-                </a>
+        <li class="c-menu__item">
+            <a href="{{route('admin.dashboard')}}" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-profile"></i>
+                </div>
 
-                <ul class="nav-dropdown-items">
-                    <li class="nav-item">
-                        <a class="nav-link {{ active_class(Active::checkUriPattern('admin/log-viewer')) }}" href="{{ route('log-viewer::dashboard') }}">
-                            {{ __('menus.backend.log-viewer.dashboard') }}
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ active_class(Active::checkUriPattern('admin/log-viewer/logs*')) }}" href="{{ route('log-viewer::logs.list') }}">
-                            {{ __('menus.backend.log-viewer.logs') }}
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-</div><!--sidebar-->
+                <div class="c-menu__text">Groups</div>
+
+                <div class="c-menu__after"></div>
+            </a>
+        </li>
+
+        <li class="c-menu__item">
+            <a href="{{route('admin.dashboard')}}" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-mail"></i>
+                </div>
+
+                <div class="c-menu__text">Send Message</div>
+
+                <div class="c-menu__after"></div>
+            </a>
+        </li>
+
+        <li class="c-menu__item">
+            <a href="{{route('admin.dashboard')}}" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-box-add"></i>
+                </div>
+
+                <div class="c-menu__text">Inbox</div>
+
+                <div class="c-menu__after"></div>
+            </a>
+        </li>
+
+        <li class="c-menu__divider"></li>
+
+        <li class="c-menu__item">
+            <a href="{{route('admin.dashboard')}}" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-wrench"></i>
+                </div>
+
+                <div class="c-menu__text">Settings</div>
+
+                <div class="c-menu__after"></div>
+            </a>
+        </li>
+    </ul>
+</sidebar>

@@ -5,6 +5,10 @@
 @section('content')
     <div class="l-app__center">
         <div class="c-sign">
+            @if(session('status'))
+                <alert type="success" :closeable="true">{{session('status')}}</alert>
+            @endif
+            
             <div class="c-sign__body">
                 <h1 class="c-sign__title u-fs-24">Forgot Your Password ?</h1>
 
@@ -16,8 +20,14 @@
                     <div class="form-control has-icon">
                         <i class="icon-envelop3 form-icon"></i>
 
-                        <input type="email" class="form-input" placeholder="Your Email address" name="email" required>
+                        <input type="email" class="form-input {{$errors->has('email') ? 'is-danger' : ''}}"
+                               placeholder="Your Email address" name="email">
+
                     </div>
+
+                    @if($errors->has('email'))
+                        <span class="form-help u-color-danger">{{$errors->first('email')}}</span>
+                    @endif
                 </div>
 
                 <button type="submit" class="btn btn--danger btn--block">Send Reset Link</button>

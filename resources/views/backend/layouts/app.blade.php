@@ -15,7 +15,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', app_name())</title>
     <meta name="description" content="@yield('meta_description', 'ACP')">
-    <meta name="author" content="@yield('meta_author', 'Oleksiy Petlyuk')">
+    <meta name="author" content="@yield('meta_author', '')">
     @yield('meta')
 
     {{-- See https://laravel.com/docs/5.5/blade#stacks for usage --}}
@@ -37,7 +37,15 @@
 
 <body>
     <div id="app" class="l-app" v-cloak>
-        @yield('content')
+        @include('backend.includes.sidebar')
+
+        <div class="l-app__content">
+            @include('backend.includes.header')
+
+            <div class="l-app__body">
+                @yield('content')
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->

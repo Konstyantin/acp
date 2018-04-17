@@ -16,17 +16,23 @@
                     {{ html()->label(__('validation.attributes.frontend.email'))->for('email')->class('form-label') }}
 
                     {{ html()->email('email')
-                    ->class('form-input')
-                    ->attribute('maxlength', 191)
-                    ->required() }}
+                    ->class(['form-input', 'is-danger' => $errors->has('email')])
+                    ->attribute('maxlength', 191) }}
+
+                    @if($errors->has('email'))
+                        <span class="form-help u-color-danger">{{$errors->first('email')}}</span>
+                    @endif
                 </div>
 
                 <div class="form-group">
                     {{ html()->label(__('validation.attributes.frontend.password'))->for('password')->class('form-label') }}
 
                     {{ html()->password('password')
-                    ->class('form-input')
-                    ->required() }}
+                    ->class(['form-input', 'is-danger' => $errors->has('password')]) }}
+
+                    @if($errors->has('password'))
+                        <span class="form-help u-color-danger">{{$errors->first('password')}}</span>
+                    @endif
                 </div>
 
                 <div class="form-group u-clearfix">
