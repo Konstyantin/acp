@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>Cover - Dashboard UI kit for Modern Web Application</title>
+    <meta name="description" content="Dashboard UI kit for Modern Web Application">
+    <meta name="keywords" content="admin, dashboard, backend, template, responsive, ui-kit, web-app, modern, flexbox, vuejs, sass">
+    <meta name="author" content="20Theme">
+    <link rel="stylesheet" href="../../dist/css/cover.css">
+    <link rel="stylesheet" href="../../dist/css/icomoon.css">
+    <link rel="apple-touch-icon" href="../../dist/images/app-icon.png">
+    <link rel="shortcut icon" href="../../dist/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../dist/images/favicon.ico" type="image/x-icon" />
+    <script src="../../dist/vendor/vue/vue.min.js"></script>
+    <script src="../../dist/cover.js"></script>
+</head>
+<body>
+    <div id="app" class="l-app u-scroll" v-cloak>
+        <div class="l-app__center">
+            <div class="c-sign">
+                <div class="c-sign__body">
+                    <h1 class="c-sign__title">Cover</h1>
+                    <p class="c-sign__text">Sign up to your App Account</p>
+                    <form action="#">
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-input">
+                        </div>
+                        <!-- END .form-group -->
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-input">
+                        </div>
+                        <!-- END .form-group -->
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-input">
+                        </div>
+                        <!-- END .form-group -->
+                        <div class="form-group">
+                            <label class="form-label">Repeat Password</label>
+                            <input type="password" class="form-input">
+                        </div>
+                        <!-- END .form-group -->
+                        <button type="button" class="btn btn--primary btn--block">Sign up</button>
+                    </form>
+                    <div class="divider u-mt-30 u-mb-10"><span>OR</span></div>
+                    <div class="u-textCenter">
+                        <a href="#" class="u-color-muted u-ml-10 u-mr-10"><i class="icon-facebook2"></i></a>
+                        <a href="#" class="u-color-muted u-ml-10 u-mr-10"><i class="icon-twitter"></i></a>
+                        <a href="#" class="u-color-muted u-ml-10 u-mr-10"><i class="icon-github"></i></a>
+                    </div>
+                </div>
+                <!-- END .c-sign__body -->
+                <div class="c-sign__footer">
+                    <p class="u-textCenter">Already have an account? <a href="#">Sign in</a></p>
+                    <p class="u-textCenter u-textMuted u-fontSize-12">Dashboard UI kit by 20Theme<br>© 2017. All RIGHT RESERVED.</p>
+                </div>
+            </div>
+            <!-- END .c-sign -->
+        </div>
+        <!-- END .l-app__center -->
+    </div>
+    <!-- END .l-app -->
+    <script>
+        new Vue({
+            el: '#app'
+        })
+    </script>
+</body>
+</html>

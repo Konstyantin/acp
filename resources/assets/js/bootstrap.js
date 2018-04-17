@@ -4,7 +4,6 @@
 
 window._ = require('lodash');
 window.swal = require('sweetalert2');
-import Popper from 'popper.js/dist/umd/popper.js';
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -13,13 +12,7 @@ import Popper from 'popper.js/dist/umd/popper.js';
  */
 
 try {
-    window.$ = window.jQuery = require('jquery');
-
-    // Required for BS4
-    window.Tether = require('tether');
-    window.Popper = Popper;
-
-    require('bootstrap');
+  window.$ = window.jQuery = require('jquery');
 } catch (e) {}
 
 /**
@@ -41,9 +34,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 let token = document.head.querySelector('meta[name="csrf-token"]');
 
 if (token) {
-    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
 } else {
-    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+  console.error(
+      'CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
 /**
