@@ -51,6 +51,7 @@
                         <th>Group Name</th>
                         <th>Contact number</th>
                         <th>Group Tag</th>
+                        <th>Manage</th>
                     </tr>
                 </thead>
 
@@ -63,11 +64,19 @@
                             </label>
                         </th>
                         <td data-label="Product">
-                            <a role="button">elit voluptate ullamco laborum</a>
+                            <a href="/admin/group/1">elit voluptate ullamco laborum</a>
                         </td>
                         <td data-label="Category">Toys</td>
                         <td data-label="Price">
                             <code>#first</code>
+                        </td>
+                        <td data-label="Manage">
+                            <a class="u-mb-5 btn btn--primary" href="/admin/group/edit/1">
+                                <i class="icon-pen5"></i>
+                            </a>
+                            <a class="u-mb-5 btn btn--danger">
+                                <i class="icon-folder-remove"></i>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -78,26 +87,19 @@
                             </label>
                         </th>
                         <td data-label="Product">
-                            <a role="button">elit voluptate ullamco laborum</a>
+                            <a href="/admin/group/1">elit voluptate ullamco laborum</a>
                         </td>
                         <td data-label="Category">Toys</td>
                         <td data-label="Price">
                             <code>#first</code>
                         </td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="u-hiddenDown@md">
-                            <label class="form-checkbox u-m-0">
-                                <input type="checkbox">
-                                <span class="form-checkbox__indicator"></span>
-                            </label>
-                        </th>
-                        <td data-label="Product">
-                            <a role="button">elit voluptate ullamco laborum</a>
-                        </td>
-                        <td data-label="Category">Toys</td>
-                        <td data-label="Price">
-                            <code>#first</code>
+                        <td data-label="Manage">
+                            <a class="u-mb-5 btn btn--primary" href="/admin/group/edit/1">
+                                <i class="icon-pen5"></i>
+                            </a>
+                            <a class="u-mb-5 btn btn--danger">
+                                <i class="icon-folder-remove"></i>
+                            </a>
                         </td>
                     </tr>
                 </tbody>

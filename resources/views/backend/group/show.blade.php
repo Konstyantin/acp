@@ -21,7 +21,7 @@
                                     <li class="c-breadcrumb__item">
                                         <a href="#" class="c-breadcrumb__link">Group</a>
                                     </li>
-                                    <li class="c-breadcrumb__item">Group</li>
+                                    <li class="c-breadcrumb__item">View</li>
                                 </ol>
                             </div>
                         </div>
@@ -31,6 +31,17 @@
                 </div>
             </header>
             <!-- END .c-toolbar -->
+        </section>
+        <section class="c-panel">
+            <header class="c-panel__header">
+                <h3 class="c-panel__title">Group view</h3>
+            </header>
+            <div class="c-panel__body">
+                <h6 class="c-card__title">Google I/O 2017</h6>
+                <div class="c-card__content">
+                    <strong>Status: </strong><span>Active</span>
+                </div>
+            </div>
         </section>
     </main>
 @endsection

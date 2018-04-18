@@ -14,5 +14,5 @@ Route::group(['prefix' => 'group'], function () {
 
     Route::get('/edit/{id}', 'GroupController@edit');
 
-    Route::get('/view/{id}', 'GroupController@show');
+    Route::get('/{id}', 'GroupController@show');
 });
