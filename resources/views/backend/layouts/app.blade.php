@@ -25,6 +25,7 @@
     <!-- Otherwise apply the normal LTR layouts -->
     {{style(asset('coverui/css/cover.css'))}}
     {{style(asset('coverui/css/icomoon.css'))}}
+    {{style(asset('css/backend.css'))}}
     <link rel="apple-touch-icon" href="{{asset('coverui/images/app-icon.png')}}">
     <link rel="shortcut icon" href="{{asset('coverui/images/favicon.ico')}}" type="image/x-icon" />
     <link rel="icon" href="{{asset('coverui/images/favicon.ico')}}" type="image/x-icon" />
