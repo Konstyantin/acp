@@ -17,7 +17,7 @@
         </li>
 
         <li class="c-menu__item">
-            <a href="{{route('admin.dashboard')}}" class="c-menu__link">
+            <a href="{{route('admin.contact.index')}}" class="c-menu__link">
                 <div class="c-menu__icon">
                     <i class="icon-phone"></i>
                 </div>
