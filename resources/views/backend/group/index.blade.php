@@ -31,7 +31,7 @@
                     </div>
                     <!-- END .l-level__left -->
                     <div class="l-level__right is-fixed">
-                        <a href="#" class="btn btn--success btn--smart">
+                        <a href="/admin/group/create" class="btn btn--success btn--smart">
                             <i class="icon-plus3 u-mr-5"></i>Create
                         </a>
                     </div>

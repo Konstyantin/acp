@@ -32,5 +32,24 @@
             </header>
             <!-- END .c-toolbar -->
         </section>
+        <section class="c-panel">
+            <header class="c-panel__header">
+                <h3 class="c-panel__title">Create new</h3>
+            </header>
+            <div class="c-panel__body">
+                <form action="#">
+                    <div class="form-group">
+                        <label class="form-label">Group name</label>
+                        <input type="text" placeholder="Group name" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-control"><label class="form-switch"><input type="checkbox"> <span class="form-switch__indicator"></span></label></div>
+                    </div>
+                    <div class="form-group">
+                        <button role="button" class="btn btn--primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 @endsection
