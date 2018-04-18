@@ -32,6 +32,7 @@
     @stack('after-styles')
 
     <script src="{{asset('coverui/vendor/vue/vue.min.js')}}"></script>
+    <script src="{{asset('coverui/vendor/holderjs/holder.min.js')}}"></script>
     <script src="{{asset('coverui/cover.js')}}"></script>
 </head>
 
@@ -50,13 +51,9 @@
 
     <!-- Scripts -->
     @stack('before-scripts')
-    {!! script(mix('js/backend.js')) !!}
-    @stack('after-scripts')
 
-    <script>
-      new Vue({
-        el: '#app'
-      })
-    </script>
+    {!! script(mix('js/backend.js')) !!}
+
+    @stack('after-scripts')
 </body>
 </html>

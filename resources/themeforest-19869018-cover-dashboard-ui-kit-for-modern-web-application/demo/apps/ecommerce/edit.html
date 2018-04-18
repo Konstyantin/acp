@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Cover">
+<meta name="format-detection" content="telephone=no">
+<title>Cover - Dashboard UI kit for Modern Web Application</title>
+<meta name="description" content="Dashboard UI Kit for Modern Web Application">
+<meta name="keywords" content="admin, dashboard, backend, template, responsive, ui-kit, web-app, modern, flexbox, vuejs, sass">
+<meta name="author" content="20Theme">
+<link rel="stylesheet" href="../../../dist/css/cover.css">
+<link rel="stylesheet" href="../../../dist/css/icomoon.css">
+<link href="../../assets/css/github-gist.css">
+<link rel="apple-touch-icon" href="../../assets/images/app-icon.png">
+<link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon" />
+<script src="../../../dist/vendor/vue/vue.js"></script>
+<script src="../../../dist/vendor/holderjs/holder.min.js"></script>
+<script src="../../../dist/cover.js"></script>
+
+  
+</head>
+<body>
+<div id="app" class="l-app" v-cloak>
+    <sidebar>
+    <div class="logo u-bg-primary" slot="start">
+        <img src="../../../dist/images/logo-white.svg">
+    </div>
+    <ul class="c-menu c-menu--dark" v-menu slot="content">
+        <li class="c-menu__category">GENERAL</li>
+        <li class="c-menu__item">
+            <a href="../../" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-lab"></i>
+                </div>
+                <div class="c-menu__text">Dashboard</div>
+                <div class="c-menu__after"></div>
+            </a>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-display"></i>
+                </div>
+                <div class="c-menu__text">Layouts</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../../layouts/grid.html" class="c-menu__link">
+                        <div class="c-menu__text">Grid</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../layouts/area.html" class="c-menu__link">
+                        <div class="c-menu__text">Area</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../layouts/level.html" class="c-menu__link">
+                        <div class="c-menu__text">Level</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../layouts/templates.html" class="c-menu__link">
+                        <div class="c-menu__text">Templates</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-files-empty"></i>
+                </div>
+                <div class="c-menu__text">Pages</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../../pages/message.html" class="c-menu__link">
+                        <div class="c-menu__text">Message</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../pages/401.html" class="c-menu__link">
+                        <div class="c-menu__text">401</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../pages/404.html" class="c-menu__link">
+                        <div class="c-menu__text">404</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../pages/500.html" class="c-menu__link">
+                        <div class="c-menu__text">500</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../pages/login.html" class="c-menu__link">
+                        <div class="c-menu__text">Login</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../pages/register.html" class="c-menu__link">
+                        <div class="c-menu__text">Register</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../pages/forgot.html" class="c-menu__link">
+                        <div class="c-menu__text">Forgot Password</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../pages/reset.html" class="c-menu__link">
+                        <div class="c-menu__text">Reset Password</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__category">APPEARANCE</li>
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-design"></i>
+                </div>
+                <div class="c-menu__text">Elements</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../../elements/buttons.html" class="c-menu__link">
+                        <div class="c-menu__text">Buttons</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../elements/badges.html" class="c-menu__link">
+                        <div class="c-menu__text">Badges</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../elements/hint.html" class="c-menu__link">
+                        <div class="c-menu__text">Hint</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../elements/progress.html" class="c-menu__link">
+                        <div class="c-menu__text">Progress</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../elements/media.html" class="c-menu__link">
+                        <div class="c-menu__text">Media</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../elements/dividers.html" class="c-menu__link">
+                        <div class="c-menu__text">Dividers</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../elements/meta.html" class="c-menu__link">
+                        <div class="c-menu__text">Meta</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../elements/icons.html" class="c-menu__link">
+                        <div class="c-menu__text">Icons</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-quill2"></i>
+                </div>
+                <div class="c-menu__text">Forms</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../../form/elements.html" class="c-menu__link">
+                        <div class="c-menu__text">Elements</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../form/layouts.html" class="c-menu__link">
+                        <div class="c-menu__text">Layouts</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../form/validation.html" class="c-menu__link">
+                        <div class="c-menu__text">Validation</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../form/input-number.html" class="c-menu__link">
+                        <div class="c-menu__text">InputNumber</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../form/multiselect.html" class="c-menu__link">
+                        <div class="c-menu__text">Multiselect</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../form/datepicker.html" class="c-menu__link">
+                        <div class="c-menu__text">DatePicker</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../form/slider.html" class="c-menu__link">
+                        <div class="c-menu__text">Slider</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../form/uploaders.html" class="c-menu__link">
+                        <div class="c-menu__text">Uploaders</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../form/quil.html" class="c-menu__link">
+                        <div class="c-menu__text">Quill Editor</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-list"></i>
+                </div>
+                <div class="c-menu__text">Navigation</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../../components/navs.html" class="c-menu__link">
+                        <div class="c-menu__text">Navs</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/navbar.html" class="c-menu__link">
+                        <div class="c-menu__text">Navbar</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/toolbar.html" class="c-menu__link">
+                        <div class="c-menu__text">Toolbar</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/menu.html" class="c-menu__link">
+                        <div class="c-menu__text">Menu</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/breadcrumb.html" class="c-menu__link">
+                        <div class="c-menu__text">Breadcrumb</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/steps.html" class="c-menu__link">
+                        <div class="c-menu__text">Steps</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/pagination.html" class="c-menu__link">
+                        <div class="c-menu__text">Pagination</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/tabs.html" class="c-menu__link">
+                        <div class="c-menu__text">Tabs</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-rocket"></i>
+                </div>
+                <div class="c-menu__text">Advanced</div>
+                <div class="c-menu__after">
+                </div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../../components/panels.html" class="c-menu__link">
+                        <div class="c-menu__text">Panels</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/notes.html" class="c-menu__link">
+                        <div class="c-menu__text">Notes</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/boxes.html" class="c-menu__link">
+                        <div class="c-menu__text">Boxes</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/alerts.html" class="c-menu__link">
+                        <div class="c-menu__text">Alerts</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/cards.html" class="c-menu__link">
+                        <div class="c-menu__text">Cards</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/cells.html" class="c-menu__link">
+                        <div class="c-menu__text">Cells</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/list.html" class="c-menu__link">
+                        <div class="c-menu__text">List</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/stream.html" class="c-menu__link">
+                        <div class="c-menu__text">Stream</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/circle-chart.html" class="c-menu__link">
+                        <div class="c-menu__text">Circle Chart</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/drops.html" class="c-menu__link">
+                        <div class="c-menu__text">Drops</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/modals.html" class="c-menu__link">
+                        <div class="c-menu__text">Modals</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/alertify.html" class="c-menu__link">
+                        <div class="c-menu__text">Alertify</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../components/notify.html" class="c-menu__link">
+                        <div class="c-menu__text">Notify</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-table2"></i>
+                </div>
+                <div class="c-menu__text">Tables</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../../tables/table.html" class="c-menu__link">
+                        <div class="c-menu__text">Basic Table</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../tables/table-data.html" class="c-menu__link">
+                        <div class="c-menu__text">Data Table</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item">
+            <a href="../../charts/index.html" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-pie-chart2"></i>
+                </div>
+                <div class="c-menu__text">Chart</div>
+            </a>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-truck"></i>
+                </div>
+                <div class="c-menu__text">Widgets</div>
+                <div class="c-menu__after">
+                    <span class="badge badge--info">35+</span>
+                </div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../../widgets/statistics.html" class="c-menu__link">
+                        <div class="c-menu__text">Statistic Widgets</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../widgets/data.html" class="c-menu__link">
+                        <div class="c-menu__text">Data Widgets</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../widgets/charts.html" class="c-menu__link">
+                        <div class="c-menu__text">Chart Widgets</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item">
+            <a href="../../utilities/index.html" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-wrench"></i>
+                </div>
+                <div class="c-menu__text">Utilities</div>
+            </a>
+        </li>
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-office"></i>
+                </div>
+                <div class="c-menu__text">Apps</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../../apps/cms/index.html" class="c-menu__link">
+                        <div class="c-menu__text">CMS</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../apps/ecommerce/index.html" class="c-menu__link">
+                        <div class="c-menu__text">eCommerce</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../apps/mailbox/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Mailbox</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../apps/documents/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Documents</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../apps/users/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Users</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../apps/library/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Library</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../../apps/settings/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Setting</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__category">v1.0.0</li>
+    </ul>
+</sidebar>
+
+    <div class="l-app__content">
+        <header class="l-app__topbar">
+    <nav class="c-navbar c-navbar--light">
+        <div class="c-navbar__left">
+            <a role="button" class="c-navbar__item u-hiddenUp@md" v-toggle:sidebar>
+                <i class="i-menu i-menu--light"></i>
+            </a>
+            <drop class="c-navbar__item">
+                <a role="button" slot="trigger">
+                    New<i class="i-caret i-caret--light u-ml-5"></i>
+                </a>
+                <drop-content slot="content">
+                    <ul class="c-nav c-nav--menus">
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Article</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Mail</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Event</a>
+                        </li>
+                        <drop tag="li" class="c-nav__item">
+                            <a href="#" class="c-nav__link" slot="trigger">Task</a>
+                            <drop-content placement="right-start" slot="content">
+                                <ul class="c-nav c-nav--menus">
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Today</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Latter</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Inbox</a>
+                                    </li>
+                                </ul>
+                            </drop-content/>
+                        </drop>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </drop-content>
+            </drop>
+        </div>
+        <!-- END .c-navbar__left -->
+        <div class="c-navbar__right">
+            <div class="c-navbar__item u-hiddenDown@md">
+                <form action="/" class="c-navbar__form">
+                    <div class="form-control has-iconRight">
+                          <i class="icon-search form-iconRight u-mr-5"></i>
+                          <input type="text" class="form-input form-input--rounded">
+                    </div>
+                </form>
+            </div>
+            <!-- END .c-navbar__item -->
+            <a class="c-navbar__item">
+                <i class="icon-bell2"></i>
+            </a>
+            <!-- END .c-nav__item -->
+            <a class="c-navbar__item">
+                <i class="icon-envelop3"></i>
+            </a>
+            <!-- END .c-nav__item -->
+            <drop class="c-navbar__item">
+                <a role="button" class="c-account" slot="trigger">
+                    <div class="c-account__media">
+                        <img src="../../assets/images/avatar.jpg" class="avatar">
+                    </div>
+                    <div class="c-account__after">
+                        <i class="i-caret i-caret--light"></i>
+                    </div>
+                </a>
+                <drop-content placement="bottom-end" slot="content">
+                    <ul class="c-nav c-nav--menus">
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Profile</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Inbox</a>
+                        </li>
+                        <li class="c-nav__divider"></li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Log out</a>
+                        </li>
+                    </ul>
+                </drop-content>
+            </drop>
+        </div>
+    </nav>
+    <!-- END .c-navbar -->
+</header>
+<!-- END .l-app__topbar -->
+
+        
+<header class="c-toolbar u-mb-0">
+    <div class="l-level">
+        <div class="l-level__left">
+            <div class="c-cell">
+                <div class="c-cell__media">
+                    <i class="icon-store"></i>
+                </div>
+                <div class="c-cell__content">
+                    <ol class="c-breadcrumb">
+                        <li class="c-breadcrumb__item">
+                            <a href="../../apps/ecommerce/index.html" class="c-breadcrumb__link">Products</a>
+                        </li>
+                        <li class="c-breadcrumb__item">
+                            Add
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- END .l-media -->
+        </div>
+        <!-- END .l-level__left -->
+        <div class="l-level__right">
+            <div class="l-level__item form-inline">
+                <div class="form-group">
+                    <label class="control-label">Status</label>
+                    <div class="form-control">
+                        <select class="form-select">
+                            <option value="1">Draft</option>
+                            <option value="2">Pendding</option>
+                            <option value="3">Publish</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Publish Date:</label>
+                    <div class="form-control has-iconRight">
+                        <i class="icon-calendar form-iconRight"></i>
+                        <date-picker :time="true" class="u-pr-20" value="2017-03-22 12:00"></date-picker>
+                    </div>
+                </div>
+            </div>
+            <div class="l-level__item">
+                <a role="button" class="btn btn--success btn--smart">Save</a>
+            </div>
+        </div>
+        <!-- END .l-level__right -->
+    </div>
+    <!-- END .l-level -->
+</header>
+<!-- END .c-toolbar -->
+<div class="l-app__body">
+    <main id="main" class="l-app__main" role="main">
+        <alert :closeable="true" type="success">
+            Product update successful!
+        </alert>
+        <div class="l-row">
+            <div class="l-col-12 l-col@md">
+                <div class="form-group">
+                    <div class="form-control">
+                        <input type="text" class="form-input" placeholder="Product Title">
+                        <small class="form-help">
+                            Link: <a href="#" target="_blank">http://www.20theme.com/products/123</a>
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-control">
+                        <textarea rows="2" class="form-textarea" placeholder="Description"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <quill-editor style="height: 360px;">
+                        <blockquote>
+                            YOU HAVE YOUR WAY. I HAVE MY WAY. AS FOR THE RIGHT WAY, THE CORRECT WAY, AND THE ONLY WAY, IT DOES NOT EXIST
+                        </blockquote>
+                    </quill-editor>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Tags</label>
+                    <div class="form-control">
+                        <multiselect
+                            v-model="tags"
+                            track-by="name"
+                            label="name"
+                            :options="options"
+                            :taggable="true"
+                            :multiple="true"
+                            v-on:tag="addTag"
+                        ></multiselect>
+                    </div>
+                </div>
+                <tabs active-key="meta" type="cards" class="u-mb-15">
+                    <tab-pane label="Meta" name="meta">
+                        <div class="c-box">
+                            <header class="c-box__heading">
+                                <a role="button" class="u-color-danger u-floatRight" title="Delete"><i class="icon-trash"></i></a>
+                                Meta #1
+                            </header>
+                            <div class="c-box__body">
+                                <div class="c-box__inner">
+                                    <div class="form-horizontal">
+                                        <div class="form-group l-row">
+                                            <label class="form-label l-col-12 l-col-fixed@md u-w-220">Meta Title: </label>
+                                            <div class="form-content l-col@md">
+                                                <input type="text" class="form-input">
+                                                <small class="form-help">max 30 chars</small>
+                                            </div>
+                                        </div>
+                                        <!-- END .form-group -->
+                                        <div class="form-group l-row">
+                                            <label class="form-label l-col-12 l-col-fixed@md u-w-220">Meta Keywords: </label>
+                                            <div class="form-content l-col@md">
+                                                <textarea rows="2" class="form-textarea"></textarea>
+                                                <small class="form-help">max 50 chars, separate by ','</small>
+                                            </div>
+                                        </div>
+                                        <!-- END .form-group -->
+                                        <div class="form-group l-row">
+                                            <label class="form-label l-col-12 l-col-fixed@md u-w-220">Meta Description: </label>
+                                            <div class="form-content l-col@md">
+                                                <textarea rows="3" class="form-textarea"></textarea>
+                                                <small class="form-help">max 200 chars</small>
+                                            </div>
+                                        </div>
+                                        <!-- END .form-group -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END .c-box -->
+                        <div class="u-clearfix u-textRight">
+                            <button class="btn btn--default btn--smart">Add Meta</button>
+                        </div>
+                    </tab-pane>
+                    <tab-pane label="Gallery" name="gallery">
+                        <div class="l-row">
+                            
+                            <div class="l-col-6@sm l-col-4@md l-col-3@lg">
+                                <article id="media-0" class="c-card c-card--ghost">
+                                    <div class="c-card__shot" style="background-image: url(https://source.unsplash.com/random/300x400?0)">
+                                    </div>
+                                    <header class="c-card__header">
+                                        <div class="c-card__leading">
+                                            <p class="c-card__title">Lorem ipsum dolor sit amet</p>
+                                            <div class="metaList">
+                                                <span class="meta">146 Likes</span>
+                                                <span class="meta">332 Downloads</span>
+                                            </div>
+                                        </div>
+                                        <div class="c-card__control">
+                                            <drop>
+                                                <a role="button" class="u-color-muted" slot="trigger"><i class="icon-cog"></i></a>
+                                                <drop-content placement="bottom-end" slot="content">
+                                                    <ul class="c-nav c-nav--menus">
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Edit</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">View</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Copy Link</a>
+                                                        </li>
+                                                        <li class="c-nav__divider"></li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link u-color-danger">Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </drop-content>
+                                            </drop>
+                                        </div>
+                                    </header>
+                                </article>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            
+                            <div class="l-col-6@sm l-col-4@md l-col-3@lg">
+                                <article id="media-1" class="c-card c-card--ghost">
+                                    <div class="c-card__shot" style="background-image: url(https://source.unsplash.com/random/300x400?1)">
+                                    </div>
+                                    <header class="c-card__header">
+                                        <div class="c-card__leading">
+                                            <p class="c-card__title">Lorem ipsum dolor sit amet</p>
+                                            <div class="metaList">
+                                                <span class="meta">146 Likes</span>
+                                                <span class="meta">332 Downloads</span>
+                                            </div>
+                                        </div>
+                                        <div class="c-card__control">
+                                            <drop>
+                                                <a role="button" class="u-color-muted" slot="trigger"><i class="icon-cog"></i></a>
+                                                <drop-content placement="bottom-end" slot="content">
+                                                    <ul class="c-nav c-nav--menus">
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Edit</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">View</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Copy Link</a>
+                                                        </li>
+                                                        <li class="c-nav__divider"></li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link u-color-danger">Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </drop-content>
+                                            </drop>
+                                        </div>
+                                    </header>
+                                </article>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            
+                            <div class="l-col-6@sm l-col-4@md l-col-3@lg">
+                                <article id="media-2" class="c-card c-card--ghost">
+                                    <div class="c-card__shot" style="background-image: url(https://source.unsplash.com/random/300x400?2)">
+                                    </div>
+                                    <header class="c-card__header">
+                                        <div class="c-card__leading">
+                                            <p class="c-card__title">Lorem ipsum dolor sit amet</p>
+                                            <div class="metaList">
+                                                <span class="meta">146 Likes</span>
+                                                <span class="meta">332 Downloads</span>
+                                            </div>
+                                        </div>
+                                        <div class="c-card__control">
+                                            <drop>
+                                                <a role="button" class="u-color-muted" slot="trigger"><i class="icon-cog"></i></a>
+                                                <drop-content placement="bottom-end" slot="content">
+                                                    <ul class="c-nav c-nav--menus">
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Edit</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">View</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Copy Link</a>
+                                                        </li>
+                                                        <li class="c-nav__divider"></li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link u-color-danger">Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </drop-content>
+                                            </drop>
+                                        </div>
+                                    </header>
+                                </article>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            
+                            <div class="l-col-6@sm l-col-4@md l-col-3@lg">
+                                <article id="media-3" class="c-card c-card--ghost">
+                                    <div class="c-card__shot" style="background-image: url(https://source.unsplash.com/random/300x400?3)">
+                                    </div>
+                                    <header class="c-card__header">
+                                        <div class="c-card__leading">
+                                            <p class="c-card__title">Lorem ipsum dolor sit amet</p>
+                                            <div class="metaList">
+                                                <span class="meta">146 Likes</span>
+                                                <span class="meta">332 Downloads</span>
+                                            </div>
+                                        </div>
+                                        <div class="c-card__control">
+                                            <drop>
+                                                <a role="button" class="u-color-muted" slot="trigger"><i class="icon-cog"></i></a>
+                                                <drop-content placement="bottom-end" slot="content">
+                                                    <ul class="c-nav c-nav--menus">
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Edit</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">View</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Copy Link</a>
+                                                        </li>
+                                                        <li class="c-nav__divider"></li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link u-color-danger">Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </drop-content>
+                                            </drop>
+                                        </div>
+                                    </header>
+                                </article>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            
+                            <div class="l-col-6@sm l-col-4@md l-col-3@lg">
+                                <article id="media-4" class="c-card c-card--ghost">
+                                    <div class="c-card__shot" style="background-image: url(https://source.unsplash.com/random/300x400?4)">
+                                    </div>
+                                    <header class="c-card__header">
+                                        <div class="c-card__leading">
+                                            <p class="c-card__title">Lorem ipsum dolor sit amet</p>
+                                            <div class="metaList">
+                                                <span class="meta">146 Likes</span>
+                                                <span class="meta">332 Downloads</span>
+                                            </div>
+                                        </div>
+                                        <div class="c-card__control">
+                                            <drop>
+                                                <a role="button" class="u-color-muted" slot="trigger"><i class="icon-cog"></i></a>
+                                                <drop-content placement="bottom-end" slot="content">
+                                                    <ul class="c-nav c-nav--menus">
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Edit</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">View</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Copy Link</a>
+                                                        </li>
+                                                        <li class="c-nav__divider"></li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link u-color-danger">Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </drop-content>
+                                            </drop>
+                                        </div>
+                                    </header>
+                                </article>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            
+                            <div class="l-col-6@sm l-col-4@md l-col-3@lg">
+                                <article id="media-5" class="c-card c-card--ghost">
+                                    <div class="c-card__shot" style="background-image: url(https://source.unsplash.com/random/300x400?5)">
+                                    </div>
+                                    <header class="c-card__header">
+                                        <div class="c-card__leading">
+                                            <p class="c-card__title">Lorem ipsum dolor sit amet</p>
+                                            <div class="metaList">
+                                                <span class="meta">146 Likes</span>
+                                                <span class="meta">332 Downloads</span>
+                                            </div>
+                                        </div>
+                                        <div class="c-card__control">
+                                            <drop>
+                                                <a role="button" class="u-color-muted" slot="trigger"><i class="icon-cog"></i></a>
+                                                <drop-content placement="bottom-end" slot="content">
+                                                    <ul class="c-nav c-nav--menus">
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Edit</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">View</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Copy Link</a>
+                                                        </li>
+                                                        <li class="c-nav__divider"></li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link u-color-danger">Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </drop-content>
+                                            </drop>
+                                        </div>
+                                    </header>
+                                </article>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            
+                            <div class="l-col-6@sm l-col-4@md l-col-3@lg">
+                                <article id="media-6" class="c-card c-card--ghost">
+                                    <div class="c-card__shot" style="background-image: url(https://source.unsplash.com/random/300x400?6)">
+                                    </div>
+                                    <header class="c-card__header">
+                                        <div class="c-card__leading">
+                                            <p class="c-card__title">Lorem ipsum dolor sit amet</p>
+                                            <div class="metaList">
+                                                <span class="meta">146 Likes</span>
+                                                <span class="meta">332 Downloads</span>
+                                            </div>
+                                        </div>
+                                        <div class="c-card__control">
+                                            <drop>
+                                                <a role="button" class="u-color-muted" slot="trigger"><i class="icon-cog"></i></a>
+                                                <drop-content placement="bottom-end" slot="content">
+                                                    <ul class="c-nav c-nav--menus">
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Edit</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">View</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Copy Link</a>
+                                                        </li>
+                                                        <li class="c-nav__divider"></li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link u-color-danger">Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </drop-content>
+                                            </drop>
+                                        </div>
+                                    </header>
+                                </article>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            
+                            <div class="l-col-6@sm l-col-4@md l-col-3@lg">
+                                <article id="media-7" class="c-card c-card--ghost">
+                                    <div class="c-card__shot" style="background-image: url(https://source.unsplash.com/random/300x400?7)">
+                                    </div>
+                                    <header class="c-card__header">
+                                        <div class="c-card__leading">
+                                            <p class="c-card__title">Lorem ipsum dolor sit amet</p>
+                                            <div class="metaList">
+                                                <span class="meta">146 Likes</span>
+                                                <span class="meta">332 Downloads</span>
+                                            </div>
+                                        </div>
+                                        <div class="c-card__control">
+                                            <drop>
+                                                <a role="button" class="u-color-muted" slot="trigger"><i class="icon-cog"></i></a>
+                                                <drop-content placement="bottom-end" slot="content">
+                                                    <ul class="c-nav c-nav--menus">
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Edit</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">View</a>
+                                                        </li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link">Copy Link</a>
+                                                        </li>
+                                                        <li class="c-nav__divider"></li>
+                                                        <li class="c-nav__item">
+                                                            <a href="#" class="c-nav__link u-color-danger">Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </drop-content>
+                                            </drop>
+                                        </div>
+                                    </header>
+                                </article>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            
+                        </div>
+                        <!-- END .l-row -->
+                    </tab-pane>
+                    <tab-pane label="Orders" name="orders">
+                        <table class="table table--responsive u-mb-0 table--striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>User</th>
+                                    <th>Fee</th>
+                                    <th>Status</th>
+                                    <th class="u-textRight@md">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../../apps/cms/invoice.html">1</a>
+                                    </td>
+                                    <td data-label="User">Cruz Oneal</td>
+                                    <td data-label="Fee"><code>$69.00</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-01-13 22:17</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../../apps/cms/invoice.html">2</a>
+                                    </td>
+                                    <td data-label="User">Lula Holder</td>
+                                    <td data-label="Fee"><code>$86.30</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--info">Paid</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-03-15 11:50</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../../apps/cms/invoice.html">3</a>
+                                    </td>
+                                    <td data-label="User">Lloyd Murphy</td>
+                                    <td data-label="Fee"><code>$84.80</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-04-02 15:12</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../../apps/cms/invoice.html">4</a>
+                                    </td>
+                                    <td data-label="User">Lula Holder</td>
+                                    <td data-label="Fee"><code>$76.90</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-01-21 08:33</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../../apps/cms/invoice.html">5</a>
+                                    </td>
+                                    <td data-label="User">Lloyd Murphy</td>
+                                    <td data-label="Fee"><code>$36.00</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-02-18 08:32</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../../apps/cms/invoice.html">6</a>
+                                    </td>
+                                    <td data-label="User">Bentley Christensen</td>
+                                    <td data-label="Fee"><code>$79.00</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-03-04 02:14</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../../apps/cms/invoice.html">7</a>
+                                    </td>
+                                    <td data-label="User">Carol Lancaster</td>
+                                    <td data-label="Fee"><code>$28.00</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-03-08 10:09</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../../apps/cms/invoice.html">8</a>
+                                    </td>
+                                    <td data-label="User">Whitaker Drake</td>
+                                    <td data-label="Fee"><code>$72.70</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--info">Paid</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-01-06 01:13</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../../apps/cms/invoice.html">9</a>
+                                    </td>
+                                    <td data-label="User">Marina Clayton</td>
+                                    <td data-label="Fee"><code>$65.50</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-03-16 08:07</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../../apps/cms/invoice.html">10</a>
+                                    </td>
+                                    <td data-label="User">Cruz Oneal</td>
+                                    <td data-label="Fee"><code>$93.00</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-02-19 00:33</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../../apps/cms/invoice.html">11</a>
+                                    </td>
+                                    <td data-label="User">Pacheco Foster</td>
+                                    <td data-label="Fee"><code>$48.30</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-03-12 13:11</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../../apps/cms/invoice.html">12</a>
+                                    </td>
+                                    <td data-label="User">Pacheco Foster</td>
+                                    <td data-label="Fee"><code>$49.10</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-02-01 07:38</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../../apps/cms/invoice.html">13</a>
+                                    </td>
+                                    <td data-label="User">Carver Christian</td>
+                                    <td data-label="Fee"><code>$45.90</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-03-21 22:02</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../../apps/cms/invoice.html">14</a>
+                                    </td>
+                                    <td data-label="User">Mosley Palmer</td>
+                                    <td data-label="Fee"><code>$64.30</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--info">Paid</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-02-27 21:02</td>
+                                </tr>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                            </tbody>
+                        </table>
+                    </tab-pane>
+                    <tab-pane label="Reviews" name="reviews">
+                        <ul class="c-cellList">
+                            <li class="c-cell c-cell--start">
+                                <div class="c-cell__media">
+                                    <img src="../../assets/images/avatar-m-1.jpg" class="avatar u-rounded">
+                                </div>
+                                <div class="c-cell__content">
+                                    <div class="c-cell__header">
+                                        <div class="c-cell__leading">
+                                            <div class="c-cell__title">Taylor Swift</div>
+                                            <time class="meta">17:14</time>
+                                        </div>
+                                    </div>
+                                    <div class="c-cell__body">
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                        </p>
+                                        <p><a href="#">https://twitter.com/lorem</a></p>
+                                        <blockquote>
+                                            <div class="c-cell c-cell--start">
+                                                <div class="c-cell__content">
+                                                    <div class="c-cell__header">
+                                                        <div class="c-cell__leading">
+                                                            <div class="c-cell__title">John Doe</div>
+                                                            <time class="meta">14:31</time>
+                                                        </div>
+                                                        <div class="c-cell__after"></div>
+                                                    </div>
+                                                    <div class="c-cell__body">
+                                                        Lorem ipsum dolor sit amet,
+                                                        consectetur adipisicing
+                                                        elit. Iusto, ipsam!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-cell c-cell--start">
+                                <div class="c-cell__media">
+                                    <img src="../../assets/images/avatar-m-2.jpg" class="avatar u-rounded">
+                                </div>
+                                <div class="c-cell__content">
+                                    <div class="c-cell__header">
+                                        <div class="c-cell__leading">
+                                            <div class="c-cell__title">myles</div>
+                                            <time class="meta">17:30</time>
+                                        </div>
+                                    </div>
+                                    <div class="c-cell__body">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Aspernatur excepturi
+                                        nesciunt inventore quibusdam, laboriosam
+                                        amet.
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="c-cell c-cell--start">
+                                <div class="c-cell__media">
+                                    <img src="../../assets/images/avatar-m-4.jpg" class="avatar u-rounded">
+                                </div>
+                                <div class="c-cell__content">
+                                    <div class="c-cell__header">
+                                        <div class="c-cell__leading">
+                                            <div class="c-cell__title">eric</div>
+                                            <time class="meta">17:50</time>
+                                        </div>
+                                    </div>
+                                    <div class="c-cell__body">
+                                        <p>
+                                            <a href="#">@mack</a>, Lorem ipsum
+                                            dolor sit amet, consectetur
+                                            adipisicing elit. Sapiente,
+                                            quisquam, laboriosam. Et tempore ut
+                                            architecto. Blanditiis eveniet
+                                            dolorem praesentium doloremque.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- END .c-cellList -->
+                    </tab-pane>
+                </tabs>
+            </div>
+            <!-- END .l-col-md -->
+            <aside class="l-col-12 l-col-fixed@md u-w-320">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h3 class="c-panel__title">Thumbnail</h3>
+                        <div class="c-panel__controls">
+                            <button class="btn btn--default btn--sm">Upload</button>
+                        </div>
+                    </header>
+                    <div class="c-panel__body">
+                        <img data-src="holder.js/300x400" class="img-fluid">
+                    </div>
+                    <!-- END .c-panel__body -->
+                </section>
+                <!-- END .c-panel -->
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h3 class="c-panel__title">Data Statistics</h3>
+                    </header>
+                    <div class="c-panel__body">
+                        <div class="form-group">
+                            <label class="control-label">Views</label>
+                            <input type="number" class="form-input" disabled value="234823">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Likes</label>
+                            <input type="number" class="form-input" disabled value="3453">
+                        </div>
+                    </div>
+                    <!-- END .c-panel__body -->
+                </section>
+                <!-- END .c-panel -->
+            </aside>
+            <!-- END .l-col-md-fixed -->
+        </div>
+        <!-- END .l-row -->
+    </main>
+    <!-- END .l-app__main -->
+</div>
+<!-- END .l-app__body -->
+
+    </div>
+</div>
+<!-- END #app -->
+
+
+<script src="../../../dist/components/quill/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            tags: [
+                { name: 'Apple' },
+                { name: 'Banana' },
+                { name: 'Orange' },
+                { name: 'Peer' },
+                { name: 'Watermelon' }
+            ],
+            options: [
+                { name: 'Apple' },
+                { name: 'Banana' },
+                { name: 'Orange' }
+            ]
+        },
+        methods: {
+            addTag (tag) {
+                this.tags.push({name: tag})
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

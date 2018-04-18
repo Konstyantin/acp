@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Cover">
+<meta name="format-detection" content="telephone=no">
+<title>Cover - Dashboard UI kit for Modern Web Application</title>
+<meta name="description" content="Dashboard UI Kit for Modern Web Application">
+<meta name="keywords" content="admin, dashboard, backend, template, responsive, ui-kit, web-app, modern, flexbox, vuejs, sass">
+<meta name="author" content="20Theme">
+<link rel="stylesheet" href="../../dist/css/cover.css">
+<link rel="stylesheet" href="../../dist/css/icomoon.css">
+<link href="../assets/css/github-gist.css">
+<link rel="apple-touch-icon" href="../assets/images/app-icon.png">
+<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+<script src="../../dist/vendor/vue/vue.js"></script>
+<script src="../../dist/vendor/holderjs/holder.min.js"></script>
+<script src="../../dist/cover.js"></script>
+
+  
+</head>
+<body>
+<div id="app" class="l-app" v-cloak>
+    <sidebar>
+    <div class="logo u-bg-primary" slot="start">
+        <img src="../../dist/images/logo-white.svg">
+    </div>
+    <ul class="c-menu c-menu--dark" v-menu slot="content">
+        <li class="c-menu__category">GENERAL</li>
+        <li class="c-menu__item">
+            <a href="../" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-lab"></i>
+                </div>
+                <div class="c-menu__text">Dashboard</div>
+                <div class="c-menu__after"></div>
+            </a>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-display"></i>
+                </div>
+                <div class="c-menu__text">Layouts</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../layouts/grid.html" class="c-menu__link">
+                        <div class="c-menu__text">Grid</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../layouts/area.html" class="c-menu__link">
+                        <div class="c-menu__text">Area</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../layouts/level.html" class="c-menu__link">
+                        <div class="c-menu__text">Level</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../layouts/templates.html" class="c-menu__link">
+                        <div class="c-menu__text">Templates</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-files-empty"></i>
+                </div>
+                <div class="c-menu__text">Pages</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../pages/message.html" class="c-menu__link">
+                        <div class="c-menu__text">Message</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/401.html" class="c-menu__link">
+                        <div class="c-menu__text">401</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/404.html" class="c-menu__link">
+                        <div class="c-menu__text">404</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/500.html" class="c-menu__link">
+                        <div class="c-menu__text">500</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/login.html" class="c-menu__link">
+                        <div class="c-menu__text">Login</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/register.html" class="c-menu__link">
+                        <div class="c-menu__text">Register</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/forgot.html" class="c-menu__link">
+                        <div class="c-menu__text">Forgot Password</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/reset.html" class="c-menu__link">
+                        <div class="c-menu__text">Reset Password</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__category">APPEARANCE</li>
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-design"></i>
+                </div>
+                <div class="c-menu__text">Elements</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../elements/buttons.html" class="c-menu__link">
+                        <div class="c-menu__text">Buttons</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/badges.html" class="c-menu__link">
+                        <div class="c-menu__text">Badges</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/hint.html" class="c-menu__link">
+                        <div class="c-menu__text">Hint</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/progress.html" class="c-menu__link">
+                        <div class="c-menu__text">Progress</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/media.html" class="c-menu__link">
+                        <div class="c-menu__text">Media</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/dividers.html" class="c-menu__link">
+                        <div class="c-menu__text">Dividers</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/meta.html" class="c-menu__link">
+                        <div class="c-menu__text">Meta</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/icons.html" class="c-menu__link">
+                        <div class="c-menu__text">Icons</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-quill2"></i>
+                </div>
+                <div class="c-menu__text">Forms</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../form/elements.html" class="c-menu__link">
+                        <div class="c-menu__text">Elements</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/layouts.html" class="c-menu__link">
+                        <div class="c-menu__text">Layouts</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/validation.html" class="c-menu__link">
+                        <div class="c-menu__text">Validation</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/input-number.html" class="c-menu__link">
+                        <div class="c-menu__text">InputNumber</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/multiselect.html" class="c-menu__link">
+                        <div class="c-menu__text">Multiselect</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/datepicker.html" class="c-menu__link">
+                        <div class="c-menu__text">DatePicker</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/slider.html" class="c-menu__link">
+                        <div class="c-menu__text">Slider</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/uploaders.html" class="c-menu__link">
+                        <div class="c-menu__text">Uploaders</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/quil.html" class="c-menu__link">
+                        <div class="c-menu__text">Quill Editor</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-list"></i>
+                </div>
+                <div class="c-menu__text">Navigation</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../components/navs.html" class="c-menu__link">
+                        <div class="c-menu__text">Navs</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/navbar.html" class="c-menu__link">
+                        <div class="c-menu__text">Navbar</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/toolbar.html" class="c-menu__link">
+                        <div class="c-menu__text">Toolbar</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/menu.html" class="c-menu__link">
+                        <div class="c-menu__text">Menu</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/breadcrumb.html" class="c-menu__link">
+                        <div class="c-menu__text">Breadcrumb</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/steps.html" class="c-menu__link">
+                        <div class="c-menu__text">Steps</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/pagination.html" class="c-menu__link">
+                        <div class="c-menu__text">Pagination</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/tabs.html" class="c-menu__link">
+                        <div class="c-menu__text">Tabs</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-rocket"></i>
+                </div>
+                <div class="c-menu__text">Advanced</div>
+                <div class="c-menu__after">
+                </div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../components/panels.html" class="c-menu__link">
+                        <div class="c-menu__text">Panels</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/notes.html" class="c-menu__link">
+                        <div class="c-menu__text">Notes</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/boxes.html" class="c-menu__link">
+                        <div class="c-menu__text">Boxes</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/alerts.html" class="c-menu__link">
+                        <div class="c-menu__text">Alerts</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/cards.html" class="c-menu__link">
+                        <div class="c-menu__text">Cards</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/cells.html" class="c-menu__link">
+                        <div class="c-menu__text">Cells</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/list.html" class="c-menu__link">
+                        <div class="c-menu__text">List</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/stream.html" class="c-menu__link">
+                        <div class="c-menu__text">Stream</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/circle-chart.html" class="c-menu__link">
+                        <div class="c-menu__text">Circle Chart</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/drops.html" class="c-menu__link">
+                        <div class="c-menu__text">Drops</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/modals.html" class="c-menu__link">
+                        <div class="c-menu__text">Modals</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/alertify.html" class="c-menu__link">
+                        <div class="c-menu__text">Alertify</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/notify.html" class="c-menu__link">
+                        <div class="c-menu__text">Notify</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-table2"></i>
+                </div>
+                <div class="c-menu__text">Tables</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../tables/table.html" class="c-menu__link">
+                        <div class="c-menu__text">Basic Table</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../tables/table-data.html" class="c-menu__link">
+                        <div class="c-menu__text">Data Table</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item">
+            <a href="../charts/index.html" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-pie-chart2"></i>
+                </div>
+                <div class="c-menu__text">Chart</div>
+            </a>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-truck"></i>
+                </div>
+                <div class="c-menu__text">Widgets</div>
+                <div class="c-menu__after">
+                    <span class="badge badge--info">35+</span>
+                </div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../widgets/statistics.html" class="c-menu__link">
+                        <div class="c-menu__text">Statistic Widgets</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../widgets/data.html" class="c-menu__link">
+                        <div class="c-menu__text">Data Widgets</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../widgets/charts.html" class="c-menu__link">
+                        <div class="c-menu__text">Chart Widgets</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item">
+            <a href="../utilities/index.html" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-wrench"></i>
+                </div>
+                <div class="c-menu__text">Utilities</div>
+            </a>
+        </li>
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-office"></i>
+                </div>
+                <div class="c-menu__text">Apps</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../apps/cms/index.html" class="c-menu__link">
+                        <div class="c-menu__text">CMS</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/ecommerce/index.html" class="c-menu__link">
+                        <div class="c-menu__text">eCommerce</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/mailbox/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Mailbox</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/documents/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Documents</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/users/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Users</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/library/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Library</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/settings/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Setting</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__category">v1.0.0</li>
+    </ul>
+</sidebar>
+
+    <div class="l-app__content">
+        <header class="l-app__topbar">
+    <nav class="c-navbar c-navbar--light">
+        <div class="c-navbar__left">
+            <a role="button" class="c-navbar__item u-hiddenUp@md" v-toggle:sidebar>
+                <i class="i-menu i-menu--light"></i>
+            </a>
+            <drop class="c-navbar__item">
+                <a role="button" slot="trigger">
+                    New<i class="i-caret i-caret--light u-ml-5"></i>
+                </a>
+                <drop-content slot="content">
+                    <ul class="c-nav c-nav--menus">
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Article</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Mail</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Event</a>
+                        </li>
+                        <drop tag="li" class="c-nav__item">
+                            <a href="#" class="c-nav__link" slot="trigger">Task</a>
+                            <drop-content placement="right-start" slot="content">
+                                <ul class="c-nav c-nav--menus">
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Today</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Latter</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Inbox</a>
+                                    </li>
+                                </ul>
+                            </drop-content/>
+                        </drop>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </drop-content>
+            </drop>
+        </div>
+        <!-- END .c-navbar__left -->
+        <div class="c-navbar__right">
+            <div class="c-navbar__item u-hiddenDown@md">
+                <form action="/" class="c-navbar__form">
+                    <div class="form-control has-iconRight">
+                          <i class="icon-search form-iconRight u-mr-5"></i>
+                          <input type="text" class="form-input form-input--rounded">
+                    </div>
+                </form>
+            </div>
+            <!-- END .c-navbar__item -->
+            <a class="c-navbar__item">
+                <i class="icon-bell2"></i>
+            </a>
+            <!-- END .c-nav__item -->
+            <a class="c-navbar__item">
+                <i class="icon-envelop3"></i>
+            </a>
+            <!-- END .c-nav__item -->
+            <drop class="c-navbar__item">
+                <a role="button" class="c-account" slot="trigger">
+                    <div class="c-account__media">
+                        <img src="../assets/images/avatar.jpg" class="avatar">
+                    </div>
+                    <div class="c-account__after">
+                        <i class="i-caret i-caret--light"></i>
+                    </div>
+                </a>
+                <drop-content placement="bottom-end" slot="content">
+                    <ul class="c-nav c-nav--menus">
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Profile</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Inbox</a>
+                        </li>
+                        <li class="c-nav__divider"></li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Log out</a>
+                        </li>
+                    </ul>
+                </drop-content>
+            </drop>
+        </div>
+    </nav>
+    <!-- END .c-navbar -->
+</header>
+<!-- END .l-app__topbar -->
+
+        
+<div class="l-app__body">
+    <main id="main" class="l-app__main" role="main">
+        <section class="c-panel">
+            <header class="c-panel__header">
+                <h2 class="c-panel__title">Colors</h2>
+            </header>
+            <div class="c-panel__body">
+                <p>
+                    Change text color or background color.
+                </p>
+                <table class="table table--bordered">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>.u-color-primary</code></td>
+                            <td><span class="u-color-primary">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-color-success</code></td>
+                            <td><span class="u-color-success">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-color-info</code></td>
+                            <td><span class="u-color-info">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-color-danger</code></td>
+                            <td><span class="u-color-danger">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-color-warning</code></td>
+                            <td><span class="u-color-warning">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-red</code></td>
+                            <td><span class="u-color-red">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-pink</code></td>
+                            <td><span class="u-color-pink">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-purple</code></td>
+                            <td><span class="u-color-purple">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-deepPurple</code></td>
+                            <td><span class="u-color-deepPurple">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-indigo</code></td>
+                            <td><span class="u-color-indigo">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-blue</code></td>
+                            <td><span class="u-color-blue">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-lightBlue</code></td>
+                            <td><span class="u-color-lightBlue">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-cyan</code></td>
+                            <td><span class="u-color-cyan">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-teal</code></td>
+                            <td><span class="u-color-teal">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-green</code></td>
+                            <td><span class="u-color-green">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-lightGreen</code></td>
+                            <td><span class="u-color-lightGreen">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-lime</code></td>
+                            <td><span class="u-color-lime">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-yellow</code></td>
+                            <td><span class="u-color-yellow">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-amber</code></td>
+                            <td><span class="u-color-amber">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-orange</code></td>
+                            <td><span class="u-color-orange">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-deepOrange</code></td>
+                            <td><span class="u-color-deepOrange">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-brown</code></td>
+                            <td><span class="u-color-brown">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-color-blueGrey</code></td>
+                            <td><span class="u-color-blueGrey">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-primary</code></td>
+                            <td><span class="u-bg-primary u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-bg-success</code></td>
+                            <td><span class="u-bg-success u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-bg-info</code></td>
+                            <td><span class="u-bg-info u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-bg-danger</code></td>
+                            <td><span class="u-bg-danger u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-bg-warning</code></td>
+                            <td><span class="u-bg-warning u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-red</code></td>
+                            <td><span class="u-bg-red u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-pink</code></td>
+                            <td><span class="u-bg-pink u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-purple</code></td>
+                            <td><span class="u-bg-purple u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-deepPurple</code></td>
+                            <td><span class="u-bg-deepPurple u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-indigo</code></td>
+                            <td><span class="u-bg-indigo u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-blue</code></td>
+                            <td><span class="u-bg-blue u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-lightBlue</code></td>
+                            <td><span class="u-bg-lightBlue u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-cyan</code></td>
+                            <td><span class="u-bg-cyan u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-teal</code></td>
+                            <td><span class="u-bg-teal u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-green</code></td>
+                            <td><span class="u-bg-green u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-lightGreen</code></td>
+                            <td><span class="u-bg-lightGreen u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-lime</code></td>
+                            <td><span class="u-bg-lime u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-yellow</code></td>
+                            <td><span class="u-bg-yellow u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-amber</code></td>
+                            <td><span class="u-bg-amber u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-orange</code></td>
+                            <td><span class="u-bg-orange u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-deepOrange</code></td>
+                            <td><span class="u-bg-deepOrange u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-brown</code></td>
+                            <td><span class="u-bg-brown u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.u-bg-blueGrey</code></td>
+                            <td><span class="u-bg-blueGrey u-pr-60 u-pb-5"></span></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <!-- END .c-panel__body -->
+        </section>
+        <!-- END .c-panel -->
+        <section class="c-panel">
+            <header class="c-panel__header">
+                <h2 class="c-panel__title">Spaces</h2>
+            </header>
+            <div class="c-panel__body">
+                <p>Space step is 5px, start from 0, end at 60px</p>
+                <table class="table table--bordered">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>.u-mt-*</code></td>
+                            <td>
+                                <code>.u-mt-0</code> is <code>margin-top: 0 !important;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-mb-*</code></td>
+                            <td>
+                                <code>.u-mb-5</code> is <code>margin-bottom: 5px !important;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-ml-*</code></td>
+                            <td>
+                                <code>.u-ml-10</code> is <code>margin-left: 10px !important;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-mr-*</code></td>
+                            <td>
+                                <code>.u-mr-15</code> is <code>margin-right: 15px !important;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-m-*</code></td>
+                            <td>
+                                <code>.u-m-20</code> is <code>margin: 20px !important;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-pt-*</code></td>
+                            <td>
+                                <code>.u-pt-0</code> is <code>padding-top: 0 !important;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-pb-*</code></td>
+                            <td>
+                                <code>.u-pb-5</code> is <code>padding-bottom: 5px !important;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-pl-*</code></td>
+                            <td>
+                                <code>.u-pl-10</code> is <code>padding-left: 10px !important;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-pr-*</code></td>
+                            <td>
+                                <code>.u-pr-15</code> is <code>padding-right: 15px !important;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-p-*</code></td>
+                            <td>
+                                <code>.u-p-20</code> is <code>padding: 20px !important;</code>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- END .c-panel__body -->
+        </section>
+        <!-- END .c-panel -->
+        <section class="c-panel">
+            <header class="c-panel__header">
+                <h2 class="c-panel__title">Text</h2>
+            </header>
+            <div class="c-panel__body">
+                <table class="table table--bordered">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>.u-textMuted</code></td>
+                            <td><span class="u-textMuted">Lorem ipsum dolor sit amet.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-textCenter</code></td>
+                            <td><div class="u-textCenter">Lorem ipsum dolor sit amet.</div></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-textRight</code></td>
+                            <td><div class="u-textRight">Lorem ipsum dolor sit amet.</div></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-textLeft</code></td>
+                            <td><div class="u-textLeft">Lorem ipsum dolor sit amet.</div></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-textTruncated</code></td>
+                            <td><div class="u-textTruncated" style="width: 100px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, velit?</div></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-textBreak</code></td>
+                            <td><div class="u-textBreak" style="width: 100px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, velit?</div></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-textNowrap</code></td>
+                            <td><div class="u-textNowrap" style="width: 100px;">Lorem ipsum dolor sit amet</div></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-h1</code></td>
+                            <td><span class="u-h1">Heading 1</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-h2</code></td>
+                            <td><span class="u-h2">Heading 2</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-h3</code></td>
+                            <td><span class="u-h3">Heading 3</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-h4</code></td>
+                            <td><span class="u-h4">Heading 4</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-h5</code></td>
+                            <td><span class="u-h5">Heading 5</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-h6</code></td>
+                            <td><span class="u-h6">Heading 6</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-fs-12</code></td>
+                            <td><span class="u-fs-12">Lorem ipsum</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-fs-14</code></td>
+                            <td><span class="u-fs-14">Lorem ipsum</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-fs-16</code></td>
+                            <td><span class="u-fs-16">Lorem ipsum</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-fs-18</code></td>
+                            <td><span class="u-fs-18">Lorem ipsum</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-fs-20</code></td>
+                            <td><span class="u-fs-20">Lorem ipsum</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-fs-24</code></td>
+                            <td><span class="u-fs-24">Lorem ipsum</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-fs-28</code></td>
+                            <td><span class="u-fs-28">Lorem ipsum</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-fs-32</code></td>
+                            <td><span class="u-fs-32">Lorem ipsum</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-fs-48</code></td>
+                            <td><span class="u-fs-48">Lorem ipsum</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-fs-64</code></td>
+                            <td><span class="u-fs-64">Lorem ipsum</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-fs-128</code></td>
+                            <td><span class="u-fs-128">Lorem ipsum</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- END .c-panel__body -->
+        </section>
+        <!-- END .c-panel -->
+        <section class="c-panel">
+            <header class="c-panel__header">
+                <h2 class="c-panel__title">Sizes</h2>
+            </header>
+            <div class="c-panel__body">
+                <p>Set fixed width or height wit h magic numbers.</p>
+                <table class="table table--bordered">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>.u-w-(180, 220, 280, 320, 360)</code></td>
+                            <td>set a fixed width of 180px or 220px ...</td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-h-(180, 220, 280, 320, 360)</code></td>
+                            <td>set a fixed height of 180px or 220px ...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- END .c-panel__body -->
+        </section>
+        <!-- END .c-panel -->
+        <section class="c-panel">
+            <header class="c-panel__header">
+                <h2 class="c-panel__title">Appearance</h2>
+            </header>
+            <div class="c-panel__body">
+                <table class="table table--bordered">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>.u-scrollY</code></td>
+                            <td>set a fixed height of element and provide a y-axis scrollbar</td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-scrollX</code></td>
+                            <td>set a fixed width of element and provide a x-axis scrollbar</td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-block</code></td>
+                            <td><code>display: block !important;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-centerBlock</code></td>
+                            <td><code>display: block !important;</code>, <code>margin-left: auto !important;</code>, <code>margin-right: auto !important;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-inline</code></td>
+                            <td><code>display: inline !important;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-inlineBlock</code></td>
+                            <td><code>display: inline-block !important;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-floatLeft</code></td>
+                            <td>Float an element to the left</td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-floatRight</code></td>
+                            <td>Float an element to the right</td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-clearfix</code></td>
+                            <td>Clear floats</td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-hidden</code></td>
+                            <td>Force an elment to be hidden</td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-hiddenUp@(sm, md, lg)</code></td>
+                            <td>Force an elment to be hidden at breakpoint up</td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-hiddenDown@(sm, md, lg)</code></td>
+                            <td>Force an elment to be hidden at breakpoint down</td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-hiddenOnly@(sm, md, lg)</code></td>
+                            <td>Force an elment to be hidden at breakpoint only</td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-invisible</code></td>
+                            <td>Toggle only the visibility of an element</td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-hideText</code></td>
+                            <td>Hide inner text only</td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-srOnly</code></td>
+                            <td>Hides an element to all devices excerpt screen readers</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- END .c-panel -->
+        <section class="c-panel">
+            <header class="c-panel__header">
+                <h2 class="c-panel__title">Flexbox</h2>
+            </header>
+            <div class="c-panel__body">
+                <table class="table table--bordered">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>.u-flex</code></td>
+                            <td><code>display: flex;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-inlineFlex</code></td>
+                            <td><code>display: inline-flex;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-flexCenter</code></td>
+                            <td><code>  display: flex; flex-direction: column; justify-content: center; align-items: center;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-flexMiddle</code></td>
+                            <td><code>display: flex; align-items: center;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-inlineFlexMiddle</code></td>
+                            <td><code>display: inline-flex; align-items: center;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-flex-0</code></td>
+                            <td><code>flex: 0 0 auto !important;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>.u-flex-1</code></td>
+                            <td><code>flex: 1 1 auto !important;</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- END .c-panel -->
+    </main>
+    <!-- END .l-app__main -->
+</div>
+<!-- END .l-app__body -->
+
+    </div>
+</div>
+<!-- END #app -->
+
+
+<script src="../assets/js/app.js"></script>
+
+</body>
+</html>

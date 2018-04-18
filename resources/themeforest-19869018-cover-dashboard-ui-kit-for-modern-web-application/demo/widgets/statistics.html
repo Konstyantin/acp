@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Cover">
+<meta name="format-detection" content="telephone=no">
+<title>Cover - Dashboard UI kit for Modern Web Application</title>
+<meta name="description" content="Dashboard UI Kit for Modern Web Application">
+<meta name="keywords" content="admin, dashboard, backend, template, responsive, ui-kit, web-app, modern, flexbox, vuejs, sass">
+<meta name="author" content="20Theme">
+<link rel="stylesheet" href="../../dist/css/cover.css">
+<link rel="stylesheet" href="../../dist/css/icomoon.css">
+<link href="../assets/css/github-gist.css">
+<link rel="apple-touch-icon" href="../assets/images/app-icon.png">
+<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+<script src="../../dist/vendor/vue/vue.js"></script>
+<script src="../../dist/vendor/holderjs/holder.min.js"></script>
+<script src="../../dist/cover.js"></script>
+
+  
+</head>
+<body>
+<div id="app" class="l-app" v-cloak>
+    <sidebar>
+    <div class="logo u-bg-primary" slot="start">
+        <img src="../../dist/images/logo-white.svg">
+    </div>
+    <ul class="c-menu c-menu--dark" v-menu slot="content">
+        <li class="c-menu__category">GENERAL</li>
+        <li class="c-menu__item">
+            <a href="../" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-lab"></i>
+                </div>
+                <div class="c-menu__text">Dashboard</div>
+                <div class="c-menu__after"></div>
+            </a>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-display"></i>
+                </div>
+                <div class="c-menu__text">Layouts</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../layouts/grid.html" class="c-menu__link">
+                        <div class="c-menu__text">Grid</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../layouts/area.html" class="c-menu__link">
+                        <div class="c-menu__text">Area</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../layouts/level.html" class="c-menu__link">
+                        <div class="c-menu__text">Level</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../layouts/templates.html" class="c-menu__link">
+                        <div class="c-menu__text">Templates</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-files-empty"></i>
+                </div>
+                <div class="c-menu__text">Pages</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../pages/message.html" class="c-menu__link">
+                        <div class="c-menu__text">Message</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/401.html" class="c-menu__link">
+                        <div class="c-menu__text">401</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/404.html" class="c-menu__link">
+                        <div class="c-menu__text">404</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/500.html" class="c-menu__link">
+                        <div class="c-menu__text">500</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/login.html" class="c-menu__link">
+                        <div class="c-menu__text">Login</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/register.html" class="c-menu__link">
+                        <div class="c-menu__text">Register</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/forgot.html" class="c-menu__link">
+                        <div class="c-menu__text">Forgot Password</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/reset.html" class="c-menu__link">
+                        <div class="c-menu__text">Reset Password</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__category">APPEARANCE</li>
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-design"></i>
+                </div>
+                <div class="c-menu__text">Elements</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../elements/buttons.html" class="c-menu__link">
+                        <div class="c-menu__text">Buttons</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/badges.html" class="c-menu__link">
+                        <div class="c-menu__text">Badges</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/hint.html" class="c-menu__link">
+                        <div class="c-menu__text">Hint</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/progress.html" class="c-menu__link">
+                        <div class="c-menu__text">Progress</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/media.html" class="c-menu__link">
+                        <div class="c-menu__text">Media</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/dividers.html" class="c-menu__link">
+                        <div class="c-menu__text">Dividers</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/meta.html" class="c-menu__link">
+                        <div class="c-menu__text">Meta</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/icons.html" class="c-menu__link">
+                        <div class="c-menu__text">Icons</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-quill2"></i>
+                </div>
+                <div class="c-menu__text">Forms</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../form/elements.html" class="c-menu__link">
+                        <div class="c-menu__text">Elements</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/layouts.html" class="c-menu__link">
+                        <div class="c-menu__text">Layouts</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/validation.html" class="c-menu__link">
+                        <div class="c-menu__text">Validation</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/input-number.html" class="c-menu__link">
+                        <div class="c-menu__text">InputNumber</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/multiselect.html" class="c-menu__link">
+                        <div class="c-menu__text">Multiselect</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/datepicker.html" class="c-menu__link">
+                        <div class="c-menu__text">DatePicker</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/slider.html" class="c-menu__link">
+                        <div class="c-menu__text">Slider</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/uploaders.html" class="c-menu__link">
+                        <div class="c-menu__text">Uploaders</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/quil.html" class="c-menu__link">
+                        <div class="c-menu__text">Quill Editor</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-list"></i>
+                </div>
+                <div class="c-menu__text">Navigation</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../components/navs.html" class="c-menu__link">
+                        <div class="c-menu__text">Navs</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/navbar.html" class="c-menu__link">
+                        <div class="c-menu__text">Navbar</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/toolbar.html" class="c-menu__link">
+                        <div class="c-menu__text">Toolbar</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/menu.html" class="c-menu__link">
+                        <div class="c-menu__text">Menu</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/breadcrumb.html" class="c-menu__link">
+                        <div class="c-menu__text">Breadcrumb</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/steps.html" class="c-menu__link">
+                        <div class="c-menu__text">Steps</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/pagination.html" class="c-menu__link">
+                        <div class="c-menu__text">Pagination</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/tabs.html" class="c-menu__link">
+                        <div class="c-menu__text">Tabs</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-rocket"></i>
+                </div>
+                <div class="c-menu__text">Advanced</div>
+                <div class="c-menu__after">
+                </div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../components/panels.html" class="c-menu__link">
+                        <div class="c-menu__text">Panels</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/notes.html" class="c-menu__link">
+                        <div class="c-menu__text">Notes</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/boxes.html" class="c-menu__link">
+                        <div class="c-menu__text">Boxes</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/alerts.html" class="c-menu__link">
+                        <div class="c-menu__text">Alerts</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/cards.html" class="c-menu__link">
+                        <div class="c-menu__text">Cards</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/cells.html" class="c-menu__link">
+                        <div class="c-menu__text">Cells</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/list.html" class="c-menu__link">
+                        <div class="c-menu__text">List</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/stream.html" class="c-menu__link">
+                        <div class="c-menu__text">Stream</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/circle-chart.html" class="c-menu__link">
+                        <div class="c-menu__text">Circle Chart</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/drops.html" class="c-menu__link">
+                        <div class="c-menu__text">Drops</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/modals.html" class="c-menu__link">
+                        <div class="c-menu__text">Modals</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/alertify.html" class="c-menu__link">
+                        <div class="c-menu__text">Alertify</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/notify.html" class="c-menu__link">
+                        <div class="c-menu__text">Notify</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-table2"></i>
+                </div>
+                <div class="c-menu__text">Tables</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../tables/table.html" class="c-menu__link">
+                        <div class="c-menu__text">Basic Table</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../tables/table-data.html" class="c-menu__link">
+                        <div class="c-menu__text">Data Table</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item">
+            <a href="../charts/index.html" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-pie-chart2"></i>
+                </div>
+                <div class="c-menu__text">Chart</div>
+            </a>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-truck"></i>
+                </div>
+                <div class="c-menu__text">Widgets</div>
+                <div class="c-menu__after">
+                    <span class="badge badge--info">35+</span>
+                </div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../widgets/statistics.html" class="c-menu__link">
+                        <div class="c-menu__text">Statistic Widgets</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../widgets/data.html" class="c-menu__link">
+                        <div class="c-menu__text">Data Widgets</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../widgets/charts.html" class="c-menu__link">
+                        <div class="c-menu__text">Chart Widgets</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item">
+            <a href="../utilities/index.html" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-wrench"></i>
+                </div>
+                <div class="c-menu__text">Utilities</div>
+            </a>
+        </li>
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-office"></i>
+                </div>
+                <div class="c-menu__text">Apps</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../apps/cms/index.html" class="c-menu__link">
+                        <div class="c-menu__text">CMS</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/ecommerce/index.html" class="c-menu__link">
+                        <div class="c-menu__text">eCommerce</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/mailbox/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Mailbox</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/documents/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Documents</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/users/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Users</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/library/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Library</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/settings/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Setting</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__category">v1.0.0</li>
+    </ul>
+</sidebar>
+
+    <div class="l-app__content">
+        <header class="l-app__topbar">
+    <nav class="c-navbar c-navbar--light">
+        <div class="c-navbar__left">
+            <a role="button" class="c-navbar__item u-hiddenUp@md" v-toggle:sidebar>
+                <i class="i-menu i-menu--light"></i>
+            </a>
+            <drop class="c-navbar__item">
+                <a role="button" slot="trigger">
+                    New<i class="i-caret i-caret--light u-ml-5"></i>
+                </a>
+                <drop-content slot="content">
+                    <ul class="c-nav c-nav--menus">
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Article</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Mail</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Event</a>
+                        </li>
+                        <drop tag="li" class="c-nav__item">
+                            <a href="#" class="c-nav__link" slot="trigger">Task</a>
+                            <drop-content placement="right-start" slot="content">
+                                <ul class="c-nav c-nav--menus">
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Today</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Latter</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Inbox</a>
+                                    </li>
+                                </ul>
+                            </drop-content/>
+                        </drop>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </drop-content>
+            </drop>
+        </div>
+        <!-- END .c-navbar__left -->
+        <div class="c-navbar__right">
+            <div class="c-navbar__item u-hiddenDown@md">
+                <form action="/" class="c-navbar__form">
+                    <div class="form-control has-iconRight">
+                          <i class="icon-search form-iconRight u-mr-5"></i>
+                          <input type="text" class="form-input form-input--rounded">
+                    </div>
+                </form>
+            </div>
+            <!-- END .c-navbar__item -->
+            <a class="c-navbar__item">
+                <i class="icon-bell2"></i>
+            </a>
+            <!-- END .c-nav__item -->
+            <a class="c-navbar__item">
+                <i class="icon-envelop3"></i>
+            </a>
+            <!-- END .c-nav__item -->
+            <drop class="c-navbar__item">
+                <a role="button" class="c-account" slot="trigger">
+                    <div class="c-account__media">
+                        <img src="../assets/images/avatar.jpg" class="avatar">
+                    </div>
+                    <div class="c-account__after">
+                        <i class="i-caret i-caret--light"></i>
+                    </div>
+                </a>
+                <drop-content placement="bottom-end" slot="content">
+                    <ul class="c-nav c-nav--menus">
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Profile</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Inbox</a>
+                        </li>
+                        <li class="c-nav__divider"></li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Log out</a>
+                        </li>
+                    </ul>
+                </drop-content>
+            </drop>
+        </div>
+    </nav>
+    <!-- END .c-navbar -->
+</header>
+<!-- END .l-app__topbar -->
+
+        
+<div class="l-app__body">
+    <main id="main" class="l-app__main" role="main">
+        <div class="l-row">
+            <div class="l-col-12 l-col-6@sm l-col-3@lg">
+                <section class="c-panel">
+                    <div class="c-panel__body">
+                        <div class="l-level">
+                            <div class="l-level__left">
+                                <i class="icon-stats-growth2 icon-2x u-color-warning"></i>
+                            </div>
+                            <!-- END .l-level__left -->
+                            <div class="l-level__right">
+                                <div class="l-level__item c-count u-textRight">
+                                    <div class="c-count__label">Monthly Sales</div>
+                                    <div class="c-count__content"><i class="icon-arrow-up5 u-color-success u-mr5"></i>371</div>
+                                </div>
+                            </div>
+                            <!-- END .l-level__right -->
+                        </div>
+                    </div>
+                </section>
+                <!-- END .c-panel -->
+            </div>
+            <!-- END .l-col-3@lg -->
+            <div class="l-col-12 l-col-6@sm l-col-3@lg">
+                <section class="c-panel">
+                    <div class="c-panel__body">
+                        <div class="l-level">
+                            <div class="l-level__left">
+                                <i class="icon-users icon-2x u-color-info"></i>
+                            </div>
+                            <!-- END .l-level__left -->
+                            <div class="l-level__right">
+                                <div class="l-level__item c-count u-textRight">
+                                    <div class="c-count__label">New Users</div>
+                                    <div class="c-count__content"><i class="icon-arrow-up5 u-color-success u-mr5"></i>113</div>
+                                </div>
+                            </div>
+                            <!-- END .l-level__right -->
+                        </div>
+                    </div>
+                </section>
+                <!-- END .c-panel -->
+            </div>
+            <!-- END .l-col-3@lg -->
+            <div class="l-col-12 l-col-6@sm l-col-3@lg">
+                <section class="c-panel">
+                    <div class="c-panel__body">
+                        <div class="l-level">
+                            <div class="l-level__item c-count">
+                                <div class="c-count__label">Followers</div>
+                                <div class="c-count__content">8346</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- END .c-panel -->
+            </div>
+            <!-- END .l-col-3@lg -->
+            <div class="l-col-12 l-col-6@sm l-col-3@lg">
+                <section class="c-panel">
+                    <div class="c-panel__body">
+                        <div class="l-level">
+                            <div class="l-level__left">
+                                <i class="icon-download4 icon-2x u-color-success"></i>
+                            </div>
+                            <!-- END .l-level__left -->
+                            <div class="l-level__right">
+                                <div class="l-level__item c-count u-textRight">
+                                    <div class="c-count__label">Downloads</div>
+                                    <div class="c-count__content"><i class="icon-arrow-up5 u-color-success u-mr5"></i>113</div>
+                                </div>
+                            </div>
+                            <!-- END .l-level__right -->
+                        </div>
+                    </div>
+                </section>
+                <!-- END .c-panel -->
+            </div>
+            <!-- END .l-col-3@lg -->
+        </div>
+        <!-- END .l-row -->
+        <div class="l-row l-panelGroup">
+            <div class="l-col-6@lg">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">Overview</h2>
+                    </header>
+                    <div class="c-panel__body">
+                        <div class="l-row">
+                            <div class="l-col-6 l-col-4@md l-col-3@lg">
+                                <div class="c-cell c-cell--start u-mb-20">
+                                    <div class="c-cell__media">
+                                        <i class="icon-2x icon-newspaper u-color-orange"></i>
+                                    </div>
+                                    <div class="c-cell__content">
+                                        <h6 class="u-mb-0">22 Aug 1993</h6>
+                                        <div class="meta">It's Friday</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            <div class="l-col-6 l-col-4@md l-col-3@lg">
+                                <div class="c-cell c-cell--start u-mb-20">
+                                    <div class="c-cell__media">
+                                        <i class="icon-2x icon-heart u-color-red"></i>
+                                    </div>
+                                    <div class="c-cell__content">
+                                        <h6 class="u-mb-0">In a relationship</h6>
+                                        <div class="meta">30 days</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            <div class="l-col-6 l-col-4@md l-col-3@lg">
+                                <div class="c-cell c-cell--start u-mb-20">
+                                    <div class="c-cell__media">
+                                        <i class="icon-2x icon-star-full u-color-amber"></i>
+                                    </div>
+                                    <div class="c-cell__content">
+                                        <h6 class="u-mb-0">Reward</h6>
+                                        <div class="meta">Help people</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            <div class="l-col-6 l-col-4@md l-col-3@lg">
+                                <div class="c-cell c-cell--start u-mb-20">
+                                    <div class="c-cell__media">
+                                        <i class="icon-2x icon-office u-color-indigo"></i>
+                                    </div>
+                                    <div class="c-cell__content">
+                                        <h6 class="u-mb-0">Department</h6>
+                                        <div class="meta">Where I sleep</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            <div class="l-col-6 l-col-4@md l-col-3@lg">
+                                <div class="c-cell c-cell--start u-mb-20">
+                                    <div class="c-cell__media">
+                                        <i class="icon-2x icon-hat u-color-blue"></i>
+                                    </div>
+                                    <div class="c-cell__content">
+                                        <h6 class="u-mb-0">Graduation</h6>
+                                        <div class="meta">From Harvard</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            <div class="l-col-6 l-col-4@md l-col-3@lg">
+                                <div class="c-cell c-cell--start u-mb-20">
+                                    <div class="c-cell__media">
+                                        <i class="icon-2x icon-briefcase u-color-brown"></i>
+                                    </div>
+                                    <div class="c-cell__content">
+                                        <h6 class="u-mb-0">Work</h6>
+                                        <div class="meta">9am to 5pm</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            <div class="l-col-6 l-col-4@md l-col-3@lg">
+                                <div class="c-cell c-cell--start u-mb-20">
+                                    <div class="c-cell__media">
+                                        <i class="icon-2x icon-airplane u-color-lightBlue"></i>
+                                    </div>
+                                    <div class="c-cell__content">
+                                        <h6 class="u-mb-0">Travel</h6>
+                                        <div class="meta">Have a vacation</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                            <div class="l-col-6 l-col-4@md l-col-3@lg">
+                                <div class="c-cell c-cell--start u-mb-20">
+                                    <div class="c-cell__media">
+                                        <i class="icon-2x icon-earth u-color-lightGreen"></i>
+                                    </div>
+                                    <div class="c-cell__content">
+                                        <h6 class="u-mb-0">Business</h6>
+                                        <div class="meta">Around the world</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END .l-col-3@lg -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-6@lg -->
+            <div class="l-col-3@lg">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">Total Revenue</h2>
+                    </header>
+                    <div class="c-panel__body u-flexCenter">
+                        <div class="c-count u-textCenter">
+                            <div class="c-count__content u-fs-48 u-color-indigo">$23,091</div>
+                            <div class="c-count__label u-mt-15">Total Incomme: <i class="icon-arrow-up-right2 u-color-success"></i>10.25%</div>
+                        </div>
+                    </div>
+                </section>
+                <!-- END .c-panel -->
+            </div>
+            <!-- END .l-col-3@lg -->
+            <div class="l-col-3@lg">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">Sales status</h2>
+                    </header>
+                    <div class="c-panel__body u-flexCenter">
+                        <div class="c-count u-textCenter">
+                            <div class="c-count__content u-fs-48 u-color-danger">328</div>
+                            <div class="c-count__label u-mt-15">Total sales: <i class="icon-arrow-up-right2 u-color-success"></i>200%</div>
+                        </div>
+                    </div>
+                </section>
+                <!-- END .c-panel -->
+            </div>
+            <!-- END .l-col-3@lg -->
+        </div>
+        <!-- END .l-row -->
+        <div class="l-row l-panelGroup">
+            <div class="l-col-6@lg">
+                <section class="c-panel">
+                    <div class="c-panel__body u-flexCenter">
+                        <div class="c-count c-count--xl u-textCenter">
+                            <div class="c-count__label">Sales</div>
+                            <div class="c-count__content">87,392</div>
+                        </div>
+                    </div>
+                </section>
+                <!-- END .c-panel -->
+            </div>
+            <!-- END .l-col-6@lg -->
+            <div class="l-col-6@lg">
+                <section class="c-panel">
+                    <div class="c-panel__body">
+                        <div class="l-level">
+                            <div class="l-level__item">
+                                <div class="c-count u-textCenter">
+                                    <div class="c-count__label">TWEETS</div>
+                                    <div class="c-count__content">2,314</div>
+                                </div>
+                            </div>
+                            <!-- END .l-level__item -->
+                            <div class="l-level__item">
+                                <div class="c-count u-textCenter">
+                                    <div class="c-count__label">FOLLWING</div>
+                                    <div class="c-count__content">64</div>
+                                </div>
+                            </div>
+                            <!-- END .l-level__item -->
+                            <div class="l-level__item">
+                                <div class="c-count u-textCenter">
+                                    <div class="c-count__label">FOLLOWERS</div>
+                                    <div class="c-count__content">62,086</div>
+                                </div>
+                            </div>
+                            <!-- END .l-level__item -->
+                        </div>
+                    </div>
+                </section>
+                <!-- END .c-panel -->
+                <section class="c-panel">
+                    <div class="c-panel__body">
+                        <div class="l-level">
+                            <div class="l-level__item c-count">
+                                <circle-chart :percent="60" color="#FCC100">
+                                    <span>60%</span>
+                                </circle-chart>
+                                <div class="c-count__label">Progress</div>
+                            </div>
+                            <!-- END .l-level__item -->
+                            <div class="l-level__item c-count">
+                                <div class="c-count__content u-color-success u-flexCenter" style="height: 80px;">48</div>
+                                <div class="c-count__label">Pendding</div>
+                            </div>
+                            <!-- END .l-level__item -->
+                        </div>
+                    </div>
+                    <!-- END .c-panel__body -->
+                </section>
+                <!-- END .c-panel -->
+            </div>
+            <!-- END .l-col-6@lg -->
+        </div>
+        <!-- END .l-row -->
+        <section class="c-panel">
+            <div class="c-panel__body">
+                <div class="l-row is-middle">
+                    <div class="l-col-2@lg l-col-3@md u-textCenter">
+                        <img src="../assets/images/avatar.jpg" class="avatar avatar--lg">
+                        <div class="u-fs-16 u-mt-5"><span class="u-textMuted">Hi, </span> MOYU</div>
+                    </div>
+                    <!-- END .l-col-2@lg -->
+                    <div class="l-col-10@lg l-col-9@md">
+                        <div class="l-row">
+                            <div class="l-col-6@md">
+                                <label>Inbox</label>
+                                <div class="u-mb-10">
+                                    <span class="u-fs-24 u-color-info">12</span>
+                                    <span class="u-textMuted">new messages</span>
+                                </div>
+                                <ul class="c-nav c-nav--gap">
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">All (36)</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Unread (12)</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Latter (13)</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Marked (11)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END .l-col-6@md -->
+                            <div class="l-col-6@md">
+                                <label>Task</label>
+                                <div class="u-mb-10">
+                                    <span class="u-fs-24 u-color-warning">8</span>
+                                    <span class="u-textMuted">today</span>
+                                </div>
+                                <ul class="c-nav c-nav--gap">
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">All (72)</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Today (8)</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Done (64)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END .l-col-6@md -->
+                        </div>
+                        <!-- END .l-row -->
+                    </div>
+                    <!-- END .l-col-10@lg -->
+                </div>
+                <!-- END .l-row -->
+            </div>
+        </section>
+        <!-- END .c-panel -->
+        <div class="l-row l-panelGroup">
+            <div class="l-col-6@sm l-col-4@md l-col-2@lg">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">Total Revenue</h2>
+                    </header>
+                    <div class="c-panel__body u-textCenter">
+                        <div class="l-level__item c-count">
+                            <circle-chart :percent="60" color="#1976d2" :size="150" :line-width="3">
+                                <span style="color: #1976d2;font-size: 24px">60</span>
+                            </circle-chart>
+                            <div class="c-count__label">Total sales made today</div>
+                        </div>
+                    </div>
+                    <div class="c-panel__footer">
+                        <div class="l-level">
+                            <div class="l-level__item">
+                                <div class="u-fs-16">$10000</div>
+                                <div class="meta">Target</div>
+                            </div>
+                            <div class="l-level__item">
+                                <div class="u-fs-16">$224</div>
+                                <div class="meta">Last day</div>
+                            </div>
+                            <div class="l-level__item">
+                                <div class="u-fs-16">$965</div>
+                                <div class="meta">Last week</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-2@lg -->
+            <div class="l-col-6@sm l-col-4@md l-col-2@lg">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">Total Revenue</h2>
+                    </header>
+                    <div class="c-panel__body u-textCenter">
+                        <div class="c-count">
+                            <circle-chart :percent="80" color="#4caf50" :size="150" :line-width="3">
+                                <span style="color: #4caf50;font-size: 24px">80</span>
+                            </circle-chart>
+                            <div class="c-count__label">Total sales made today</div>
+                        </div>
+                    </div>
+                    <div class="c-panel__footer">
+                        <div class="l-level">
+                            <div class="l-level__item">
+                                <div class="u-fs-16">$10000</div>
+                                <div class="meta">Target</div>
+                            </div>
+                            <div class="l-level__item">
+                                <div class="u-fs-16">$224</div>
+                                <div class="meta">Last day</div>
+                            </div>
+                            <div class="l-level__item">
+                                <div class="u-fs-16">$965</div>
+                                <div class="meta">Last week</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-2@lg -->
+            <div class="l-col-6@sm l-col-4@md l-col-2@lg">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">Total Revenue</h2>
+                    </header>
+                    <div class="c-panel__body u-textCenter">
+                        <div class="c-count">
+                            <circle-chart :percent="55" color="#ff5722" :size="150" :line-width="3">
+                                <span style="color: #ff5722;font-size: 24px">55</span>
+                            </circle-chart>
+                            <div class="c-count__label">Total sales made today</div>
+                        </div>
+                    </div>
+                    <div class="c-panel__footer">
+                        <div class="l-level">
+                            <div class="l-level__item">
+                                <div class="u-fs-16">$10000</div>
+                                <div class="meta">Target</div>
+                            </div>
+                            <div class="l-level__item">
+                                <div class="u-fs-16">$224</div>
+                                <div class="meta">Last day</div>
+                            </div>
+                            <div class="l-level__item">
+                                <div class="u-fs-16">$965</div>
+                                <div class="meta">Last week</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-2@lg -->
+            <div class="l-col-6@md l-col-3@lg">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">Clients</h2>
+                    </header>
+                    <div class="c-panel__body">
+                        <div class="form-group">
+                            <label class="form-label u-textMuted">Beijing(56)</label>
+                            <progress class="progress progress--info" value="45" max="100"></progress>
+                        </div>
+                        <!-- END .form-group -->
+                        <div class="form-group">
+                            <label class="form-label u-textMuted">Shanghai(60)</label>
+                            <progress class="progress progress--danger" value="60" max="100"></progress>
+                        </div>
+                        <!-- END .form-group -->
+                        <div class="form-group">
+                            <label class="form-label u-textMuted">Chengdu(80)</label>
+                            <progress class="progress progress--warning" value="80" max="100"></progress>
+                        </div>
+                        <!-- END .form-group -->
+                        <div class="form-group">
+                            <label class="form-label u-textMuted">Shenzhen(15)</label>
+                            <progress class="progress" value="15" max="100"></progress>
+                        </div>
+                        <!-- END .form-group -->
+                        <div class="form-group">
+                            <label class="form-label u-textMuted">Guangzhou(30)</label>
+                            <progress class="progress progress--primary" value="30" max="100"></progress>
+                        </div>
+                        <!-- END .form-group -->
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-3@lg -->
+            <div class="l-col-6@md l-col-3@lg">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">New Visitors</h2>
+                    </header>
+                    <div class="c-panel__body">
+                        <div class="c-count">
+                            <div class="c-count__content">23,892</div>
+                            <progress class="progress progress--info progress--sm u-mt-10 u-mb-5" value="75" max="100"></progress>
+                            <div class="c-count__label">
+                                <i class="icon-arrow-up5 u-color-success"></i> 65% more than last month
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- END .c-panel -->
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">New Orders</h2>
+                    </header>
+                    <div class="c-panel__body">
+                        <div class="c-count">
+                            <div class="c-count__content">6,991</div>
+                            <progress class="progress progress--warning progress--sm u-mt-10 u-mb-5" value="50" max="100"></progress>
+                            <div class="c-count__label">
+                                <i class="icon-arrow-up5 u-color-success"></i> 35% more than last month
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- END .c-panel -->
+            </div>
+            <!-- END .l-col-3@lg -->
+        </div>
+        <!-- END .l-row -->
+        <div class="l-row">
+            <div class="l-col-4@md">
+                <section class="c-panel">
+                    <div class="c-panel__body u-p-30 u-textCenter">
+                        <div class="c-message">
+                            <div class="c-message__media">
+                                <i class="icon-users icon-3x u-color-teal"></i>
+                            </div>
+                            <div class="c-message__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, repudiandae.
+                            </div>
+                            <button class="btn btn--success btn--lg btn--smart btn--rounded">Call Us</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-4@md -->
+            <div class="l-col-4@md">
+                <section class="c-panel">
+                    <div class="c-panel__body u-p-30 u-textCenter">
+                        <div class="c-message">
+                            <div class="c-message__media">
+                                <i class="icon-paperplane icon-3x u-color-lime"></i>
+                            </div>
+                            <div class="c-message__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, repudiandae.
+                            </div>
+                            <button class="btn btn--success btn--lg btn--smart btn--rounded">Send Email</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-4@md -->
+            <div class="l-col-4@md">
+                <section class="c-panel">
+                    <div class="c-panel__body u-p-30 u-textCenter">
+                        <div class="c-message">
+                            <div class="c-message__media">
+                                <i class="icon-bubbles icon-3x u-color-blue"></i>
+                            </div>
+                            <div class="c-message__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, repudiandae.
+                            </div>
+                            <button class="btn btn--success btn--lg btn--smart btn--rounded">Snapchat</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-4@md -->
+        </div>
+        <!-- END .l-row -->
+        <div class="l-row">
+            <div class="l-col-6@md l-col-3@lg">
+                <section class="c-panel">
+                    <div class="c-panel__body">
+                        <div class="u-textCenter">
+                            <img src="../assets/images/avatar-m-2.jpg" class="avatar avatar--xl u-mb-10">
+                            <div class="u-fs-16">Emerson Medina</div>
+                            <div>Freelancer, Designer, Coder</div>
+                            <div class="meta u-mb-15">184 Malta Street, Neibert, West Virginia, 7480</div>
+                            <div class="l-row">
+                                <div class="l-col-6">
+                                    <button class="btn btn--info btn--block">Edit Profile</button>
+                                </div>
+                                <div class="l-col-6">
+                                    <button class="btn btn--default btn--block">View Profile</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="u-mb-10 u-mt-20">
+                        <div class="l-level">
+                            <div class="l-level__item">
+                                <div class="u-fs-16">38</div>
+                                <span class="meta">REVIEWS</span>
+                            </div>
+                            <div class="l-level__item">
+                                <div class="u-fs-16">54</div>
+                                <span class="meta">CLIENTS</span>
+                            </div>
+                            <div class="l-level__item">
+                                <div class="u-fs-16">86</div>
+                                <span class="meta">PROJECTS</span>
+                            </div>
+                        </div>
+                        <hr class="u-mt-10 u-mb-20">
+                        <ul class="c-stream">
+                            <li class="c-stream__item">
+                                <span class="badge badge--primary c-stream__badge"></span>
+                                <time class="u-color-muted u-fontSize-12">2 minutes ago</time>
+                                <p class="u-m-0">
+                                    Check your internet connection
+                                </p>
+                            </li>
+                            <!-- END .c-stream__item -->
+                            <li class="c-stream__item">
+                                <time class="u-color-muted u-fontSize-12">9:30</time>
+                                <p class="u-m-0">
+                                    Meeting with tech leader
+                                </p>
+                            </li>
+                            <!-- END .c-stream__item -->
+                        </ul>
+                        <!-- END .c-stream -->
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-3@lg -->
+        </div>
+        <!-- END .l-row -->
+    </main>
+    <!-- END .l-app__main -->
+</div>
+<!-- END .l-app__body -->
+
+    </div>
+</div>
+<!-- END #app -->
+
+
+<script src="../assets/js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Cover">
+<meta name="format-detection" content="telephone=no">
+<title>Cover - Dashboard UI kit for Modern Web Application</title>
+<meta name="description" content="Dashboard UI Kit for Modern Web Application">
+<meta name="keywords" content="admin, dashboard, backend, template, responsive, ui-kit, web-app, modern, flexbox, vuejs, sass">
+<meta name="author" content="20Theme">
+<link rel="stylesheet" href="../../dist/css/cover.css">
+<link rel="stylesheet" href="../../dist/css/icomoon.css">
+<link href="../assets/css/github-gist.css">
+<link rel="apple-touch-icon" href="../assets/images/app-icon.png">
+<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+<script src="../../dist/vendor/vue/vue.js"></script>
+<script src="../../dist/vendor/holderjs/holder.min.js"></script>
+<script src="../../dist/cover.js"></script>
+
+  
+</head>
+<body>
+<div id="app" class="l-app" v-cloak>
+    <sidebar>
+    <div class="logo u-bg-primary" slot="start">
+        <img src="../../dist/images/logo-white.svg">
+    </div>
+    <ul class="c-menu c-menu--dark" v-menu slot="content">
+        <li class="c-menu__category">GENERAL</li>
+        <li class="c-menu__item">
+            <a href="../" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-lab"></i>
+                </div>
+                <div class="c-menu__text">Dashboard</div>
+                <div class="c-menu__after"></div>
+            </a>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-display"></i>
+                </div>
+                <div class="c-menu__text">Layouts</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../layouts/grid.html" class="c-menu__link">
+                        <div class="c-menu__text">Grid</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../layouts/area.html" class="c-menu__link">
+                        <div class="c-menu__text">Area</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../layouts/level.html" class="c-menu__link">
+                        <div class="c-menu__text">Level</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../layouts/templates.html" class="c-menu__link">
+                        <div class="c-menu__text">Templates</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-files-empty"></i>
+                </div>
+                <div class="c-menu__text">Pages</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../pages/message.html" class="c-menu__link">
+                        <div class="c-menu__text">Message</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/401.html" class="c-menu__link">
+                        <div class="c-menu__text">401</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/404.html" class="c-menu__link">
+                        <div class="c-menu__text">404</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/500.html" class="c-menu__link">
+                        <div class="c-menu__text">500</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/login.html" class="c-menu__link">
+                        <div class="c-menu__text">Login</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/register.html" class="c-menu__link">
+                        <div class="c-menu__text">Register</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/forgot.html" class="c-menu__link">
+                        <div class="c-menu__text">Forgot Password</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/reset.html" class="c-menu__link">
+                        <div class="c-menu__text">Reset Password</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__category">APPEARANCE</li>
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-design"></i>
+                </div>
+                <div class="c-menu__text">Elements</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../elements/buttons.html" class="c-menu__link">
+                        <div class="c-menu__text">Buttons</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/badges.html" class="c-menu__link">
+                        <div class="c-menu__text">Badges</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/hint.html" class="c-menu__link">
+                        <div class="c-menu__text">Hint</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/progress.html" class="c-menu__link">
+                        <div class="c-menu__text">Progress</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/media.html" class="c-menu__link">
+                        <div class="c-menu__text">Media</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/dividers.html" class="c-menu__link">
+                        <div class="c-menu__text">Dividers</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/meta.html" class="c-menu__link">
+                        <div class="c-menu__text">Meta</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/icons.html" class="c-menu__link">
+                        <div class="c-menu__text">Icons</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-quill2"></i>
+                </div>
+                <div class="c-menu__text">Forms</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../form/elements.html" class="c-menu__link">
+                        <div class="c-menu__text">Elements</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/layouts.html" class="c-menu__link">
+                        <div class="c-menu__text">Layouts</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/validation.html" class="c-menu__link">
+                        <div class="c-menu__text">Validation</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/input-number.html" class="c-menu__link">
+                        <div class="c-menu__text">InputNumber</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/multiselect.html" class="c-menu__link">
+                        <div class="c-menu__text">Multiselect</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/datepicker.html" class="c-menu__link">
+                        <div class="c-menu__text">DatePicker</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/slider.html" class="c-menu__link">
+                        <div class="c-menu__text">Slider</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/uploaders.html" class="c-menu__link">
+                        <div class="c-menu__text">Uploaders</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/quil.html" class="c-menu__link">
+                        <div class="c-menu__text">Quill Editor</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-list"></i>
+                </div>
+                <div class="c-menu__text">Navigation</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../components/navs.html" class="c-menu__link">
+                        <div class="c-menu__text">Navs</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/navbar.html" class="c-menu__link">
+                        <div class="c-menu__text">Navbar</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/toolbar.html" class="c-menu__link">
+                        <div class="c-menu__text">Toolbar</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/menu.html" class="c-menu__link">
+                        <div class="c-menu__text">Menu</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/breadcrumb.html" class="c-menu__link">
+                        <div class="c-menu__text">Breadcrumb</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/steps.html" class="c-menu__link">
+                        <div class="c-menu__text">Steps</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/pagination.html" class="c-menu__link">
+                        <div class="c-menu__text">Pagination</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/tabs.html" class="c-menu__link">
+                        <div class="c-menu__text">Tabs</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-rocket"></i>
+                </div>
+                <div class="c-menu__text">Advanced</div>
+                <div class="c-menu__after">
+                </div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../components/panels.html" class="c-menu__link">
+                        <div class="c-menu__text">Panels</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/notes.html" class="c-menu__link">
+                        <div class="c-menu__text">Notes</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/boxes.html" class="c-menu__link">
+                        <div class="c-menu__text">Boxes</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/alerts.html" class="c-menu__link">
+                        <div class="c-menu__text">Alerts</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/cards.html" class="c-menu__link">
+                        <div class="c-menu__text">Cards</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/cells.html" class="c-menu__link">
+                        <div class="c-menu__text">Cells</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/list.html" class="c-menu__link">
+                        <div class="c-menu__text">List</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/stream.html" class="c-menu__link">
+                        <div class="c-menu__text">Stream</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/circle-chart.html" class="c-menu__link">
+                        <div class="c-menu__text">Circle Chart</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/drops.html" class="c-menu__link">
+                        <div class="c-menu__text">Drops</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/modals.html" class="c-menu__link">
+                        <div class="c-menu__text">Modals</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/alertify.html" class="c-menu__link">
+                        <div class="c-menu__text">Alertify</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/notify.html" class="c-menu__link">
+                        <div class="c-menu__text">Notify</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-table2"></i>
+                </div>
+                <div class="c-menu__text">Tables</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../tables/table.html" class="c-menu__link">
+                        <div class="c-menu__text">Basic Table</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../tables/table-data.html" class="c-menu__link">
+                        <div class="c-menu__text">Data Table</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item">
+            <a href="../charts/index.html" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-pie-chart2"></i>
+                </div>
+                <div class="c-menu__text">Chart</div>
+            </a>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-truck"></i>
+                </div>
+                <div class="c-menu__text">Widgets</div>
+                <div class="c-menu__after">
+                    <span class="badge badge--info">35+</span>
+                </div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../widgets/statistics.html" class="c-menu__link">
+                        <div class="c-menu__text">Statistic Widgets</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../widgets/data.html" class="c-menu__link">
+                        <div class="c-menu__text">Data Widgets</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../widgets/charts.html" class="c-menu__link">
+                        <div class="c-menu__text">Chart Widgets</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item">
+            <a href="../utilities/index.html" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-wrench"></i>
+                </div>
+                <div class="c-menu__text">Utilities</div>
+            </a>
+        </li>
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-office"></i>
+                </div>
+                <div class="c-menu__text">Apps</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../apps/cms/index.html" class="c-menu__link">
+                        <div class="c-menu__text">CMS</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/ecommerce/index.html" class="c-menu__link">
+                        <div class="c-menu__text">eCommerce</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/mailbox/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Mailbox</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/documents/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Documents</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/users/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Users</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/library/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Library</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/settings/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Setting</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__category">v1.0.0</li>
+    </ul>
+</sidebar>
+
+    <div class="l-app__content">
+        <header class="l-app__topbar">
+    <nav class="c-navbar c-navbar--light">
+        <div class="c-navbar__left">
+            <a role="button" class="c-navbar__item u-hiddenUp@md" v-toggle:sidebar>
+                <i class="i-menu i-menu--light"></i>
+            </a>
+            <drop class="c-navbar__item">
+                <a role="button" slot="trigger">
+                    New<i class="i-caret i-caret--light u-ml-5"></i>
+                </a>
+                <drop-content slot="content">
+                    <ul class="c-nav c-nav--menus">
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Article</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Mail</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Event</a>
+                        </li>
+                        <drop tag="li" class="c-nav__item">
+                            <a href="#" class="c-nav__link" slot="trigger">Task</a>
+                            <drop-content placement="right-start" slot="content">
+                                <ul class="c-nav c-nav--menus">
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Today</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Latter</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Inbox</a>
+                                    </li>
+                                </ul>
+                            </drop-content/>
+                        </drop>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </drop-content>
+            </drop>
+        </div>
+        <!-- END .c-navbar__left -->
+        <div class="c-navbar__right">
+            <div class="c-navbar__item u-hiddenDown@md">
+                <form action="/" class="c-navbar__form">
+                    <div class="form-control has-iconRight">
+                          <i class="icon-search form-iconRight u-mr-5"></i>
+                          <input type="text" class="form-input form-input--rounded">
+                    </div>
+                </form>
+            </div>
+            <!-- END .c-navbar__item -->
+            <a class="c-navbar__item">
+                <i class="icon-bell2"></i>
+            </a>
+            <!-- END .c-nav__item -->
+            <a class="c-navbar__item">
+                <i class="icon-envelop3"></i>
+            </a>
+            <!-- END .c-nav__item -->
+            <drop class="c-navbar__item">
+                <a role="button" class="c-account" slot="trigger">
+                    <div class="c-account__media">
+                        <img src="../assets/images/avatar.jpg" class="avatar">
+                    </div>
+                    <div class="c-account__after">
+                        <i class="i-caret i-caret--light"></i>
+                    </div>
+                </a>
+                <drop-content placement="bottom-end" slot="content">
+                    <ul class="c-nav c-nav--menus">
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Profile</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Inbox</a>
+                        </li>
+                        <li class="c-nav__divider"></li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Log out</a>
+                        </li>
+                    </ul>
+                </drop-content>
+            </drop>
+        </div>
+    </nav>
+    <!-- END .c-navbar -->
+</header>
+<!-- END .l-app__topbar -->
+
+        
+<div class="l-app__body">
+    <main id="main" class="l-app__main" role="main">
+        <div class="l-row l-panelGroup">
+            <div class="l-col-9@lg">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">Top Contributors</h2>
+                    </header>
+                    <div class="c-panel__body">
+                        
+                        <div class="l-row">
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-m-0.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Spence Barlow</div>
+                                        <div class="c-account__meta">+1 (922) 428-3874</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-f-1.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Cruz Oneal</div>
+                                        <div class="c-account__meta">+1 (844) 579-2977</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-m-2.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Mosley Palmer</div>
+                                        <div class="c-account__meta">+1 (984) 484-2605</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-m-3.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Lula Holder</div>
+                                        <div class="c-account__meta">+1 (828) 516-2880</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="l-row">
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-m-4.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Barnett Riley</div>
+                                        <div class="c-account__meta">+1 (891) 528-3792</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-f-5.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Livingston Barron</div>
+                                        <div class="c-account__meta">+1 (917) 441-3661</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-m-6.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Carver Christian</div>
+                                        <div class="c-account__meta">+1 (837) 535-2826</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-m-7.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Gilbert Prince</div>
+                                        <div class="c-account__meta">+1 (932) 545-3020</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="l-row">
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-m-8.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Bentley Christensen</div>
+                                        <div class="c-account__meta">+1 (891) 522-3706</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-f-9.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Patrick Skinner</div>
+                                        <div class="c-account__meta">+1 (995) 449-3713</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-f-10.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Marina Clayton</div>
+                                        <div class="c-account__meta">+1 (922) 599-3731</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-f-11.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Kristy Roberts</div>
+                                        <div class="c-account__meta">+1 (863) 413-2588</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="l-row">
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-f-12.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Carol Lancaster</div>
+                                        <div class="c-account__meta">+1 (838) 504-3277</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-f-13.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Whitfield Kemp</div>
+                                        <div class="c-account__meta">+1 (942) 474-3634</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-f-14.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Kara Graves</div>
+                                        <div class="c-account__meta">+1 (928) 410-3280</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-f-15.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Decker Long</div>
+                                        <div class="c-account__meta">+1 (894) 540-2028</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="l-row">
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-m-16.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Peggy Camacho</div>
+                                        <div class="c-account__meta">+1 (971) 492-3631</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-m-17.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Pacheco Foster</div>
+                                        <div class="c-account__meta">+1 (945) 480-3291</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-m-18.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Lloyd Murphy</div>
+                                        <div class="c-account__meta">+1 (979) 471-3832</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                            <div class="l-col-3@lg l-col-6@md">
+                                <div class="c-account u-mb-15">
+                                    <div class="c-account__media">
+                                        <img src="../assets/images/avatar-f-19.jpg" class="avatar avatar--lg">
+                                    </div>
+                                    <!-- END .c-account__media -->
+                                    <div class="c-account__content">
+                                        <div class="c-account__title u-mb-5">Whitaker Drake</div>
+                                        <div class="c-account__meta">+1 (853) 562-3924</div>
+                                    </div>
+                                    <!-- END .c-account__content -->
+                                </div>
+                                <!-- END .c-account -->
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-9@lg -->
+            <div class="l-col-3@lg">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">Daily Feed</h2>
+                    </header>
+                    <div class="c-panel__body">
+                        <div class="c-cellList">
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <div class="c-cell">
+                                <div class="c-cell__content">
+                                    <div class="c-cell__header u-mb-5">
+                                        <div class="c-cell__leading">
+                                            <div class="c-account">
+                                                <div class="c-account__media">
+                                                    <img src="../assets/images/avatar-f-14.jpg" class="avatar avatar--sm">
+                                                </div>
+                                                <div class="c-account__content">
+                                                    <div class="c-account__title">Kara Graves</div>
+                                                    <div class="c-account__meta">@karagraves</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-cell__after">
+                                            <button class="btn btn--sm btn--info btn--outline">Follow</button>
+                                        </div>
+                                    </div>
+                                    <div class="c-cell__body">
+                                        <p>Mollit aliqua sunt elit proident voluptate aliquip incididunt tempor aute excepteur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="c-cell">
+                                <div class="c-cell__content">
+                                    <div class="c-cell__header u-mb-5">
+                                        <div class="c-cell__leading">
+                                            <div class="c-account">
+                                                <div class="c-account__media">
+                                                    <img src="../assets/images/avatar-f-10.jpg" class="avatar avatar--sm">
+                                                </div>
+                                                <div class="c-account__content">
+                                                    <div class="c-account__title">Marina Clayton</div>
+                                                    <div class="c-account__meta">@marinaclayton</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-cell__after">
+                                            <button class="btn btn--sm btn--info btn--outline">Follow</button>
+                                        </div>
+                                    </div>
+                                    <div class="c-cell__body">
+                                        <p>Excepteur velit dolor eiusmod mollit veniam sunt irure duis ea nisi sunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="c-cell">
+                                <div class="c-cell__content">
+                                    <div class="c-cell__header u-mb-5">
+                                        <div class="c-cell__leading">
+                                            <div class="c-account">
+                                                <div class="c-account__media">
+                                                    <img src="../assets/images/avatar-f-1.jpg" class="avatar avatar--sm">
+                                                </div>
+                                                <div class="c-account__content">
+                                                    <div class="c-account__title">Cruz Oneal</div>
+                                                    <div class="c-account__meta">@cruzoneal</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-cell__after">
+                                            <button class="btn btn--sm btn--info btn--outline">Follow</button>
+                                        </div>
+                                    </div>
+                                    <div class="c-cell__body">
+                                        <p>Dolore amet aute mollit velit esse ex do.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="c-cell">
+                                <div class="c-cell__content">
+                                    <div class="c-cell__header u-mb-5">
+                                        <div class="c-cell__leading">
+                                            <div class="c-account">
+                                                <div class="c-account__media">
+                                                    <img src="../assets/images/avatar-m-18.jpg" class="avatar avatar--sm">
+                                                </div>
+                                                <div class="c-account__content">
+                                                    <div class="c-account__title">Lloyd Murphy</div>
+                                                    <div class="c-account__meta">@lloydmurphy</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-cell__after">
+                                            <button class="btn btn--sm btn--info btn--outline">Follow</button>
+                                        </div>
+                                    </div>
+                                    <div class="c-cell__body">
+                                        <p>Nulla consectetur voluptate pariatur sit nisi ipsum labore voluptate ad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </div>
+                        <!-- END .c-cellList -->
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-3@lg -->
+        </div>
+        <!-- END .l-row -->
+        <div class="l-row l-panelGroup">
+            <div class="l-col-3@lg l-col-6@md">
+                <section class="c-panel">
+                    <div class="c-panel__body">
+                        <tabs active-name="news" type="underline">
+                            <tab-pane label="News" name="news" class="u-mt-10">
+                                <ul class="c-list u-mb-0">
+                                    
+                                    
+                                    <li class="c-list__item">
+                                        <div class="c-cell c-cell--start">
+                                            <div class="c-cell__media">
+                                                <span class="badge badge--info"></span>
+                                            </div>
+                                            <!-- END .c-cell__media -->
+                                            <div class="c-cell__content">
+                                                <div class="c-cell__header">
+                                                    <div class="c-cell__leading">
+                                                        <div class="c-cell__title">exercitation consectetur cillum non</div>
+                                                    </div>
+                                                    <div class="c-cell__after">2017-01-09 13:16</div>
+                                                </div>
+                                                <div class="c-cell__body">Ea tempor mollit magna minim nostrud.</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                    
+                                    <li class="c-list__item">
+                                        <div class="c-cell c-cell--start">
+                                            <div class="c-cell__media">
+                                                <span class="badge badge--info"></span>
+                                            </div>
+                                            <!-- END .c-cell__media -->
+                                            <div class="c-cell__content">
+                                                <div class="c-cell__header">
+                                                    <div class="c-cell__leading">
+                                                        <div class="c-cell__title">incididunt labore aliqua ad</div>
+                                                    </div>
+                                                    <div class="c-cell__after">2017-01-26 07:19</div>
+                                                </div>
+                                                <div class="c-cell__body">Officia pariatur tempor duis Lorem eiusmod et do.</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                    
+                                    <li class="c-list__item">
+                                        <div class="c-cell c-cell--start">
+                                            <div class="c-cell__media">
+                                                <span class="badge badge--danger"></span>
+                                            </div>
+                                            <!-- END .c-cell__media -->
+                                            <div class="c-cell__content">
+                                                <div class="c-cell__header">
+                                                    <div class="c-cell__leading">
+                                                        <div class="c-cell__title">eu veniam nisi labore</div>
+                                                    </div>
+                                                    <div class="c-cell__after">2017-01-05 15:42</div>
+                                                </div>
+                                                <div class="c-cell__body">Magna enim irure anim amet officia duis cillum esse in cupidatat.</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                    
+                                    <li class="c-list__item">
+                                        <div class="c-cell c-cell--start">
+                                            <div class="c-cell__media">
+                                                <span class="badge badge--danger"></span>
+                                            </div>
+                                            <!-- END .c-cell__media -->
+                                            <div class="c-cell__content">
+                                                <div class="c-cell__header">
+                                                    <div class="c-cell__leading">
+                                                        <div class="c-cell__title">enim eiusmod dolore fugiat</div>
+                                                    </div>
+                                                    <div class="c-cell__after">2017-01-08 21:05</div>
+                                                </div>
+                                                <div class="c-cell__body">Anim occaecat culpa deserunt excepteur nostrud.</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                    
+                                    <li class="c-list__item">
+                                        <div class="c-cell c-cell--start">
+                                            <div class="c-cell__media">
+                                                <span class="badge badge--danger"></span>
+                                            </div>
+                                            <!-- END .c-cell__media -->
+                                            <div class="c-cell__content">
+                                                <div class="c-cell__header">
+                                                    <div class="c-cell__leading">
+                                                        <div class="c-cell__title">dolore pariatur ut fugiat</div>
+                                                    </div>
+                                                    <div class="c-cell__after">2017-03-20 06:31</div>
+                                                </div>
+                                                <div class="c-cell__body">Eu do nostrud nostrud qui eu ex occaecat.</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </ul>
+                            </tab-pane>
+                            <tab-pane label="Messages" name="messages" class="u-mt-10">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <li class="c-list__item">
+                                    <div class="c-cell c-cell--start">
+                                        <div class="c-cell__media">
+                                            <span class="badge badge--danger"></span>
+                                        </div>
+                                        <!-- END .c-cell__media -->
+                                        <div class="c-cell__content">
+                                            <div class="c-cell__header">
+                                                <div class="c-cell__leading">
+                                                    <div class="c-cell__title">Barnett Riley</div>
+                                                </div>
+                                                <div class="c-cell__after">2017-02-28 15:35</div>
+                                            </div>
+                                            <div class="c-cell__body">Nostrud sit qui exercitation ad do id culpa.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                <li class="c-list__item">
+                                    <div class="c-cell c-cell--start">
+                                        <div class="c-cell__media">
+                                            <span class="badge badge--success"></span>
+                                        </div>
+                                        <!-- END .c-cell__media -->
+                                        <div class="c-cell__content">
+                                            <div class="c-cell__header">
+                                                <div class="c-cell__leading">
+                                                    <div class="c-cell__title">Whitfield Kemp</div>
+                                                </div>
+                                                <div class="c-cell__after">2017-01-19 16:25</div>
+                                            </div>
+                                            <div class="c-cell__body">Incididunt dolore deserunt amet magna dolore sint excepteur exercitation elit et.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                <li class="c-list__item">
+                                    <div class="c-cell c-cell--start">
+                                        <div class="c-cell__media">
+                                            <span class="badge badge--info"></span>
+                                        </div>
+                                        <!-- END .c-cell__media -->
+                                        <div class="c-cell__content">
+                                            <div class="c-cell__header">
+                                                <div class="c-cell__leading">
+                                                    <div class="c-cell__title">Whitfield Kemp</div>
+                                                </div>
+                                                <div class="c-cell__after">2017-02-28 18:29</div>
+                                            </div>
+                                            <div class="c-cell__body">Labore nostrud ut nulla labore tempor.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                <li class="c-list__item">
+                                    <div class="c-cell c-cell--start">
+                                        <div class="c-cell__media">
+                                            <span class="badge badge--success"></span>
+                                        </div>
+                                        <!-- END .c-cell__media -->
+                                        <div class="c-cell__content">
+                                            <div class="c-cell__header">
+                                                <div class="c-cell__leading">
+                                                    <div class="c-cell__title">Kara Graves</div>
+                                                </div>
+                                                <div class="c-cell__after">2017-03-07 17:23</div>
+                                            </div>
+                                            <div class="c-cell__body">Mollit aliqua sunt elit proident voluptate aliquip incididunt tempor aute excepteur.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                <li class="c-list__item">
+                                    <div class="c-cell c-cell--start">
+                                        <div class="c-cell__media">
+                                            <span class="badge badge--warning"></span>
+                                        </div>
+                                        <!-- END .c-cell__media -->
+                                        <div class="c-cell__content">
+                                            <div class="c-cell__header">
+                                                <div class="c-cell__leading">
+                                                    <div class="c-cell__title">Marina Clayton</div>
+                                                </div>
+                                                <div class="c-cell__after">2017-03-11 21:41</div>
+                                            </div>
+                                            <div class="c-cell__body">Excepteur velit dolor eiusmod mollit veniam sunt irure duis ea nisi sunt.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </tab-pane>
+                            <tab-pane label="Feedbacks" name="feedbacks" class="u-mt-10">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <li class="c-list__item">
+                                    <div class="c-cell c-cell--start">
+                                        <div class="c-cell__media">
+                                            <span class="badge badge--danger"></span>
+                                        </div>
+                                        <!-- END .c-cell__media -->
+                                        <div class="c-cell__content">
+                                            <div class="c-cell__header">
+                                                <div class="c-cell__leading">
+                                                    <div class="c-cell__title">Cruz Oneal</div>
+                                                </div>
+                                                <div class="c-cell__after">2017-01-05 01:53</div>
+                                            </div>
+                                            <div class="c-cell__body">Dolore amet aute mollit velit esse ex do.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                <li class="c-list__item">
+                                    <div class="c-cell c-cell--start">
+                                        <div class="c-cell__media">
+                                            <span class="badge badge--danger"></span>
+                                        </div>
+                                        <!-- END .c-cell__media -->
+                                        <div class="c-cell__content">
+                                            <div class="c-cell__header">
+                                                <div class="c-cell__leading">
+                                                    <div class="c-cell__title">Lloyd Murphy</div>
+                                                </div>
+                                                <div class="c-cell__after">2017-03-03 13:35</div>
+                                            </div>
+                                            <div class="c-cell__body">Nulla consectetur voluptate pariatur sit nisi ipsum labore voluptate ad.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                <li class="c-list__item">
+                                    <div class="c-cell c-cell--start">
+                                        <div class="c-cell__media">
+                                            <span class="badge badge--success"></span>
+                                        </div>
+                                        <!-- END .c-cell__media -->
+                                        <div class="c-cell__content">
+                                            <div class="c-cell__header">
+                                                <div class="c-cell__leading">
+                                                    <div class="c-cell__title">Livingston Barron</div>
+                                                </div>
+                                                <div class="c-cell__after">2017-02-01 03:53</div>
+                                            </div>
+                                            <div class="c-cell__body">Tempor commodo aliquip aliqua ut magna ex anim officia mollit sunt eiusmod adipisicing.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                <li class="c-list__item">
+                                    <div class="c-cell c-cell--start">
+                                        <div class="c-cell__media">
+                                            <span class="badge badge--success"></span>
+                                        </div>
+                                        <!-- END .c-cell__media -->
+                                        <div class="c-cell__content">
+                                            <div class="c-cell__header">
+                                                <div class="c-cell__leading">
+                                                    <div class="c-cell__title">Mosley Palmer</div>
+                                                </div>
+                                                <div class="c-cell__after">2017-04-08 22:34</div>
+                                            </div>
+                                            <div class="c-cell__body">Nostrud qui consectetur eiusmod eu duis.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                <li class="c-list__item">
+                                    <div class="c-cell c-cell--start">
+                                        <div class="c-cell__media">
+                                            <span class="badge badge--success"></span>
+                                        </div>
+                                        <!-- END .c-cell__media -->
+                                        <div class="c-cell__content">
+                                            <div class="c-cell__header">
+                                                <div class="c-cell__leading">
+                                                    <div class="c-cell__title">Lula Holder</div>
+                                                </div>
+                                                <div class="c-cell__after">2017-02-17 11:45</div>
+                                            </div>
+                                            <div class="c-cell__body">Proident labore excepteur labore nostrud.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </tab-pane>
+                        </tabs>
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-3@lg -->
+            <div class="l-col-3@lg l-col-6@md">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">Tasks</h2>
+                    </header>
+                    <div class="c-panel__body">
+                        <ul class="c-stream">
+                            <li class="c-stream__item">
+                                <span class="badge badge--primary c-stream__badge"></span>
+                                <time class="u-color-muted u-fs-12">2 minutes ago</time>
+                                <p class="u-m-0">
+                                    Check your internet connection
+                                </p>
+                            </li>
+                            <!-- END .c-stream__item -->
+                            <li class="c-stream__item">
+                                <time class="u-color-muted u-fs-12">9:30</time>
+                                <p class="u-m-0">
+                                    Meeting with tech leader
+                                </p>
+                            </li>
+                            <!-- END .c-stream__item -->
+                            <li class="c-stream__item">
+                                <time class="u-color-muted u-fs-12">8:30</time>
+                                <p class="u-m-0">
+                                    Call to customer <a href="#">Jacob</a> and discuss the detail.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, consequatur.
+                                </p>
+                            </li>
+                            <!-- END .c-stream__item -->
+                            <li class="c-stream__item">
+                                <time class="u-color-muted u-fs-12">Wed, 25 Mar</time>
+                                <p class="u-m-0">
+                                    Finished task Testing.
+                                </p>
+                            </li>
+                            <!-- END .c-stream__item -->
+                        </ul>
+                        <!-- END .c-stream -->
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-3@lg -->
+            <div class="l-col-3@lg l-col-6@md">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">Quick Note</h2>
+                        <div class="c-panel__controls">
+                            <i class="icon-menu"></i>
+                        </div>
+                    </header>
+                    <div class="c-panel__body">
+                        <div class="form-group">
+                            <textarea class="form-textarea" rows="4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, animi!</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Status</label>
+                            <select class="form-select">
+                                <option value="0">Todo</option>
+                                <option value="1">Bug</option>
+                                <option value="2">Fixed</option>
+                            </select>
+                        </div>
+                        <div class="u-clearfix">
+                            <button class="btn btn--info">Save</button>
+                            <button class="btn btn--default">Cancel</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-3@lg -->
+            <div class="l-col-3@lg">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">Summary</h2>
+                    </header>
+                    <div class="c-panel__body">
+                        <div class="l-row">
+                            <div class="l-col-6">
+                                <table class="table table--simple">
+                                    <thead>
+                                        <tr><th colspan="2">This Month</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="u-textMuted">Income</td>
+                                            <td class="u-textRight">$23,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="u-textMuted">Sales</td>
+                                            <td class="u-textRight">940</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- END .l-col-6 -->
+                            <div class="l-col-6">
+                                <table class="table table--simple">
+                                    <thead>
+                                        <tr><th colspan="2">Today</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="u-textMuted">Income</td>
+                                            <td class="u-textRight">$575</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="u-textMuted">Sales</td>
+                                            <td class="u-textRight">23</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- END .l-col-6 -->
+                        </div>
+                        <!-- END .l-row -->
+                        <div class="l-row">
+                            <div class="l-col-6">
+                                <table class="table table--simple">
+                                    <thead>
+                                        <tr><th colspan="2">Last Month</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="u-textMuted">Income</td>
+                                            <td class="u-textRight">$20,300</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="u-textMuted">Sales</td>
+                                            <td class="u-textRight">812</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- END .l-col-6 -->
+                            <div class="l-col-6">
+                                <table class="table table--simple">
+                                    <thead>
+                                        <tr><th colspan="2">Total</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="u-textMuted">Income</td>
+                                            <td class="u-textRight">$65,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="u-textMuted">Sales</td>
+                                            <td class="u-textRight">2600</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- END .l-col-6 -->
+                        </div>
+                        <!-- END .l-row -->
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-3@lg -->
+        </div>
+        <!-- END .l-row -->
+        <div class="l-row l-panelGroup">
+            <div class="l-col-6@lg">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">Recent orders</h2>
+                        <div class="c-panel__controls">
+                            <ul class="c-nav c-nav--actions">
+                                <li class="c-nav__item">
+                                    <a role="button" class="c-nav__link">
+                                        MORE
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END .c-panel__controls -->
+                    </header>
+                    <div class="c-panel__body">
+                        <table class="table table--responsive table--striped u-mb-0">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>User</th>
+                                    <th>Fee</th>
+                                    <th>Status</th>
+                                    <th class="u-textRight@md">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../apps/cms/invoice.html">1</a>
+                                    </td>
+                                    <td data-label="User">Cruz Oneal</td>
+                                    <td data-label="Fee"><code>$69.00</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-01-13 22:17</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../apps/cms/invoice.html">2</a>
+                                    </td>
+                                    <td data-label="User">Lula Holder</td>
+                                    <td data-label="Fee"><code>$86.30</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--info">Paid</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-03-15 11:50</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../apps/cms/invoice.html">3</a>
+                                    </td>
+                                    <td data-label="User">Lloyd Murphy</td>
+                                    <td data-label="Fee"><code>$84.80</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-04-02 15:12</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../apps/cms/invoice.html">4</a>
+                                    </td>
+                                    <td data-label="User">Lula Holder</td>
+                                    <td data-label="Fee"><code>$76.90</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-01-21 08:33</td>
+                                </tr>
+                                
+                            
+                                
+                                <tr>
+                                    <td data-label="Id">
+                                        <a href="../apps/cms/invoice.html">5</a>
+                                    </td>
+                                    <td data-label="User">Lloyd Murphy</td>
+                                    <td data-label="Fee"><code>$36.00</code></td>
+                                    <td data-label="Status">
+                                        
+                                        <span class="badge badge--default">Refunded</span>
+                                        
+                                    </td>
+                                    <td data-label="Date" class="u-textRight@md">2017-02-18 08:32</td>
+                                </tr>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END .c-panel__body -->
+                </section>
+                <!-- END .c-panel -->
+            </div>
+            <!-- END .l-col-6@lg -->
+            <div class="l-col-6@lg">
+                <section class="c-panel">
+                    <header class="c-panel__header">
+                        <h2 class="c-panel__title">Visitors</h2>
+                    </header>
+                    <div class="c-panel__body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Country</th>
+                                    <th>Vists</th>
+                                    <th>Growth</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>U.S.A</td>
+                                    <td>10,931</td>
+                                    <td>
+                                        <progress class="progress progress--info progress--sm u-m-0" value="90" max="100"></progress>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>U.K</td>
+                                    <td>11,093</td>
+                                    <td>
+                                        <progress class="progress progress--info progress--sm u-m-0" value="86" max="100"></progress>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>China</td>
+                                    <td>23,021</td>
+                                    <td>
+                                        <progress class="progress progress--info progress--sm u-m-0" value="50" max="100"></progress>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Canada</td>
+                                    <td>3,093</td>
+                                    <td>
+                                        <progress class="progress progress--info progress--sm u-m-0" value="30" max="100"></progress>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Gemany</td>
+                                    <td>1,005</td>
+                                    <td>
+                                        <progress class="progress progress--info progress--sm u-m-0" value="20" max="100"></progress>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+            <!-- END .l-col-6@lg -->
+        </div>
+        <!-- END .l-row -->
+    </main>
+    <!-- END .l-app__main -->
+</div>
+<!-- END .l-app__body -->
+
+    </div>
+</div>
+<!-- END #app -->
+
+
+<script src="../../dist/components/quill/index.js"></script>
+<script>
+    new Vue({
+        el: '#app'
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Cover">
+<meta name="format-detection" content="telephone=no">
+<title>Cover - Dashboard UI kit for Modern Web Application</title>
+<meta name="description" content="Dashboard UI Kit for Modern Web Application">
+<meta name="keywords" content="admin, dashboard, backend, template, responsive, ui-kit, web-app, modern, flexbox, vuejs, sass">
+<meta name="author" content="20Theme">
+<link rel="stylesheet" href="../../dist/css/cover.css">
+<link rel="stylesheet" href="../../dist/css/icomoon.css">
+<link href="../assets/css/github-gist.css">
+<link rel="apple-touch-icon" href="../assets/images/app-icon.png">
+<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+<script src="../../dist/vendor/vue/vue.js"></script>
+<script src="../../dist/vendor/holderjs/holder.min.js"></script>
+<script src="../../dist/cover.js"></script>
+
+  
+</head>
+<body>
+<div id="app" class="l-app" v-cloak>
+    <sidebar>
+    <div class="logo u-bg-primary" slot="start">
+        <img src="../../dist/images/logo-white.svg">
+    </div>
+    <ul class="c-menu c-menu--dark" v-menu slot="content">
+        <li class="c-menu__category">GENERAL</li>
+        <li class="c-menu__item">
+            <a href="../" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-lab"></i>
+                </div>
+                <div class="c-menu__text">Dashboard</div>
+                <div class="c-menu__after"></div>
+            </a>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-display"></i>
+                </div>
+                <div class="c-menu__text">Layouts</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../layouts/grid.html" class="c-menu__link">
+                        <div class="c-menu__text">Grid</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../layouts/area.html" class="c-menu__link">
+                        <div class="c-menu__text">Area</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../layouts/level.html" class="c-menu__link">
+                        <div class="c-menu__text">Level</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../layouts/templates.html" class="c-menu__link">
+                        <div class="c-menu__text">Templates</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-files-empty"></i>
+                </div>
+                <div class="c-menu__text">Pages</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../pages/message.html" class="c-menu__link">
+                        <div class="c-menu__text">Message</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/401.html" class="c-menu__link">
+                        <div class="c-menu__text">401</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/404.html" class="c-menu__link">
+                        <div class="c-menu__text">404</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/500.html" class="c-menu__link">
+                        <div class="c-menu__text">500</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/login.html" class="c-menu__link">
+                        <div class="c-menu__text">Login</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/register.html" class="c-menu__link">
+                        <div class="c-menu__text">Register</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/forgot.html" class="c-menu__link">
+                        <div class="c-menu__text">Forgot Password</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../pages/reset.html" class="c-menu__link">
+                        <div class="c-menu__text">Reset Password</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__category">APPEARANCE</li>
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-design"></i>
+                </div>
+                <div class="c-menu__text">Elements</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../elements/buttons.html" class="c-menu__link">
+                        <div class="c-menu__text">Buttons</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/badges.html" class="c-menu__link">
+                        <div class="c-menu__text">Badges</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/hint.html" class="c-menu__link">
+                        <div class="c-menu__text">Hint</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/progress.html" class="c-menu__link">
+                        <div class="c-menu__text">Progress</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/media.html" class="c-menu__link">
+                        <div class="c-menu__text">Media</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/dividers.html" class="c-menu__link">
+                        <div class="c-menu__text">Dividers</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/meta.html" class="c-menu__link">
+                        <div class="c-menu__text">Meta</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../elements/icons.html" class="c-menu__link">
+                        <div class="c-menu__text">Icons</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-quill2"></i>
+                </div>
+                <div class="c-menu__text">Forms</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../form/elements.html" class="c-menu__link">
+                        <div class="c-menu__text">Elements</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/layouts.html" class="c-menu__link">
+                        <div class="c-menu__text">Layouts</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/validation.html" class="c-menu__link">
+                        <div class="c-menu__text">Validation</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/input-number.html" class="c-menu__link">
+                        <div class="c-menu__text">InputNumber</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/multiselect.html" class="c-menu__link">
+                        <div class="c-menu__text">Multiselect</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/datepicker.html" class="c-menu__link">
+                        <div class="c-menu__text">DatePicker</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/slider.html" class="c-menu__link">
+                        <div class="c-menu__text">Slider</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/uploaders.html" class="c-menu__link">
+                        <div class="c-menu__text">Uploaders</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../form/quil.html" class="c-menu__link">
+                        <div class="c-menu__text">Quill Editor</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-list"></i>
+                </div>
+                <div class="c-menu__text">Navigation</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../components/navs.html" class="c-menu__link">
+                        <div class="c-menu__text">Navs</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/navbar.html" class="c-menu__link">
+                        <div class="c-menu__text">Navbar</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/toolbar.html" class="c-menu__link">
+                        <div class="c-menu__text">Toolbar</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/menu.html" class="c-menu__link">
+                        <div class="c-menu__text">Menu</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/breadcrumb.html" class="c-menu__link">
+                        <div class="c-menu__text">Breadcrumb</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/steps.html" class="c-menu__link">
+                        <div class="c-menu__text">Steps</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/pagination.html" class="c-menu__link">
+                        <div class="c-menu__text">Pagination</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/tabs.html" class="c-menu__link">
+                        <div class="c-menu__text">Tabs</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="c-menu__item has-sub">
+            <a href="#" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-rocket"></i>
+                </div>
+                <div class="c-menu__text">Advanced</div>
+                <div class="c-menu__after">
+                </div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../components/panels.html" class="c-menu__link">
+                        <div class="c-menu__text">Panels</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/notes.html" class="c-menu__link">
+                        <div class="c-menu__text">Notes</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/boxes.html" class="c-menu__link">
+                        <div class="c-menu__text">Boxes</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/alerts.html" class="c-menu__link">
+                        <div class="c-menu__text">Alerts</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/cards.html" class="c-menu__link">
+                        <div class="c-menu__text">Cards</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/cells.html" class="c-menu__link">
+                        <div class="c-menu__text">Cells</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/list.html" class="c-menu__link">
+                        <div class="c-menu__text">List</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/stream.html" class="c-menu__link">
+                        <div class="c-menu__text">Stream</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/circle-chart.html" class="c-menu__link">
+                        <div class="c-menu__text">Circle Chart</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/drops.html" class="c-menu__link">
+                        <div class="c-menu__text">Drops</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/modals.html" class="c-menu__link">
+                        <div class="c-menu__text">Modals</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/alertify.html" class="c-menu__link">
+                        <div class="c-menu__text">Alertify</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../components/notify.html" class="c-menu__link">
+                        <div class="c-menu__text">Notify</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-table2"></i>
+                </div>
+                <div class="c-menu__text">Tables</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../tables/table.html" class="c-menu__link">
+                        <div class="c-menu__text">Basic Table</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../tables/table-data.html" class="c-menu__link">
+                        <div class="c-menu__text">Data Table</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item">
+            <a href="../charts/index.html" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-pie-chart2"></i>
+                </div>
+                <div class="c-menu__text">Chart</div>
+            </a>
+        </li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-truck"></i>
+                </div>
+                <div class="c-menu__text">Widgets</div>
+                <div class="c-menu__after">
+                    <span class="badge badge--info">35+</span>
+                </div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../widgets/statistics.html" class="c-menu__link">
+                        <div class="c-menu__text">Statistic Widgets</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../widgets/data.html" class="c-menu__link">
+                        <div class="c-menu__text">Data Widgets</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../widgets/charts.html" class="c-menu__link">
+                        <div class="c-menu__text">Chart Widgets</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__item">
+            <a href="../utilities/index.html" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-wrench"></i>
+                </div>
+                <div class="c-menu__text">Utilities</div>
+            </a>
+        </li>
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__item has-sub">
+            <a role="button" class="c-menu__link">
+                <div class="c-menu__icon">
+                    <i class="icon-office"></i>
+                </div>
+                <div class="c-menu__text">Apps</div>
+            </a>
+            <ul class="c-menu">
+                <li class="c-menu__item">
+                    <a href="../apps/cms/index.html" class="c-menu__link">
+                        <div class="c-menu__text">CMS</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/ecommerce/index.html" class="c-menu__link">
+                        <div class="c-menu__text">eCommerce</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/mailbox/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Mailbox</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/documents/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Documents</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/users/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Users</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/library/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Library</div>
+                    </a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="../apps/settings/index.html" class="c-menu__link">
+                        <div class="c-menu__text">Setting</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-menu__divider"></li>
+        <li class="c-menu__category">v1.0.0</li>
+    </ul>
+</sidebar>
+
+    <div class="l-app__content">
+        <header class="l-app__topbar">
+    <nav class="c-navbar c-navbar--light">
+        <div class="c-navbar__left">
+            <a role="button" class="c-navbar__item u-hiddenUp@md" v-toggle:sidebar>
+                <i class="i-menu i-menu--light"></i>
+            </a>
+            <drop class="c-navbar__item">
+                <a role="button" slot="trigger">
+                    New<i class="i-caret i-caret--light u-ml-5"></i>
+                </a>
+                <drop-content slot="content">
+                    <ul class="c-nav c-nav--menus">
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Article</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Mail</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Event</a>
+                        </li>
+                        <drop tag="li" class="c-nav__item">
+                            <a href="#" class="c-nav__link" slot="trigger">Task</a>
+                            <drop-content placement="right-start" slot="content">
+                                <ul class="c-nav c-nav--menus">
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Today</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Latter</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Inbox</a>
+                                    </li>
+                                </ul>
+                            </drop-content/>
+                        </drop>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </drop-content>
+            </drop>
+        </div>
+        <!-- END .c-navbar__left -->
+        <div class="c-navbar__right">
+            <div class="c-navbar__item u-hiddenDown@md">
+                <form action="/" class="c-navbar__form">
+                    <div class="form-control has-iconRight">
+                          <i class="icon-search form-iconRight u-mr-5"></i>
+                          <input type="text" class="form-input form-input--rounded">
+                    </div>
+                </form>
+            </div>
+            <!-- END .c-navbar__item -->
+            <a class="c-navbar__item">
+                <i class="icon-bell2"></i>
+            </a>
+            <!-- END .c-nav__item -->
+            <a class="c-navbar__item">
+                <i class="icon-envelop3"></i>
+            </a>
+            <!-- END .c-nav__item -->
+            <drop class="c-navbar__item">
+                <a role="button" class="c-account" slot="trigger">
+                    <div class="c-account__media">
+                        <img src="../assets/images/avatar.jpg" class="avatar">
+                    </div>
+                    <div class="c-account__after">
+                        <i class="i-caret i-caret--light"></i>
+                    </div>
+                </a>
+                <drop-content placement="bottom-end" slot="content">
+                    <ul class="c-nav c-nav--menus">
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Profile</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Inbox</a>
+                        </li>
+                        <li class="c-nav__divider"></li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link">Log out</a>
+                        </li>
+                    </ul>
+                </drop-content>
+            </drop>
+        </div>
+    </nav>
+    <!-- END .c-navbar -->
+</header>
+<!-- END .l-app__topbar -->
+
+        
+<div class="l-app__body">
+    <main id="main" class="l-app__main" role="main">
+        <section class="c-panel">
+            <header class="c-toolbar u-mb-0">
+                <div class="c-toolbar__group l-level">
+                    <div class="l-level__left is-auto">
+                        <div class="c-cell">
+                            <div class="c-cell__media">
+                                <i class="icon-stats-bars3"></i>
+                            </div>
+                            <div class="c-cell__content">
+                                <h1 class="c-toolbar__title">Data Table</h1>
+                                <ol class="c-breadcrumb">
+                                    <li class="c-breadcrumb__item">
+                                        <a href="#" class="c-breadcrumb__link">Dashboard</a>
+                                    </li>
+                                    <li class="c-breadcrumb__item">
+                                        <a href="#" class="c-breadcrumb__link">Tables</a>
+                                    </li>
+                                    <li class="c-breadcrumb__item">
+                                        data
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- END .l-media -->
+                    </div>
+                    <!-- END .l-level__left -->
+                    <div class="l-level__right is-fixed">
+                        <a href="#" class="btn btn--success btn--smart">
+                            <i class="icon-plus3 u-mr-5"></i>New Item
+                        </a>
+                    </div>
+                    <!-- END .l-level__right -->
+                </div>
+                <!-- END .c-toolbar__group -->
+                <div class="c-toolbar__group l-level">
+                    <div class="l-level__left is-auto">
+                        <div class="l-level__item u-hiddenDown@md">
+                            <ul class="c-nav c-nav--pills">
+                                <li class="c-nav__item">
+                                    <a href="#" class="c-nav__link is-active">All (32)</a>
+                                </li>
+                                <li class="c-nav__item">
+                                    <a href="#" class="c-nav__link">Publish (16)</a>
+                                </li>
+                                <li class="c-nav__item">
+                                    <a href="#" class="c-nav__link">Pendding (12)</a>
+                                </li>
+                                <li class="c-nav__item">
+                                    <a href="#" class="c-nav__link">Draft (4)</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <drop class="l-level__item u-hiddenUp@md">
+                            <a role="button" class="btn btn--default" slot="trigger">Menu</a>
+                            <div class="c-drop__content" slot="content">
+                                <ul class="c-nav c-nav--pills c-nav--stacked">
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">All (32)</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Publish (16)</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Pendding (12)</a>
+                                    </li>
+                                    <li class="c-nav__item">
+                                        <a href="#" class="c-nav__link">Draft (4)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </drop>
+                    </div>
+                    <!-- END .l-level__left -->
+                    <div class="l-level__right is-fixed">
+                        <div class="l-level__item">
+                            <form action="#" class="form-inline">
+                                <div class="form-group">
+                                    <div class="form-control has-icon">
+                                        <i class="form-icon icon-search4 u-ml-5"></i>
+                                        <input type="text" class="form-input form-input--rounded">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- END .l-level__item -->
+                    </div>
+                    <!-- END .l-level__right -->
+                </div>
+                <!-- END .c-toolbar__group -->
+            </header>
+            <!-- END .c-toolbar -->
+            <table class="table table--data">
+                <thead>
+                    <tr>
+                        <th class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <th class="u-hiddenDown@md">#ID</th>
+                        <th>
+                            <a role="button">
+                                Product Name<i class="i-sort is-down"></i>
+                            </a>
+                        </th>
+                        <th>Category</th>
+                        <th>
+                            <a role="button">
+                                Price<i class="i-sort"></i>
+                            </a>
+                        </th>
+                        <th>
+                            <a role="button">
+                                Stock<i class="i-sort"></i>
+                            </a>
+                        </th>
+                        <th class="u-textCenter">Status</th>
+                        <th>Vendor</th>
+                        <th class="u-textRight">
+                            <a role="button">
+                                Date<i class="i-sort"></i>
+                            </a>
+                        </th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <th class="u-hiddenDown@md">#ID</th>
+                        <th>
+                            <a role="button">
+                                Product Name<i class="i-sort is-down"></i>
+                            </a>
+                        </th>
+                        <th>Category</th>
+                        <th>
+                            <a role="button">
+                                Price<i class="i-sort"></i>
+                            </a>
+                        </th>
+                        <th>
+                            <a role="button">
+                                Stock<i class="i-sort"></i>
+                            </a>
+                        </th>
+                        <th class="u-textCenter">Status</th>
+                        <th>Vendor</th>
+                        <th class="u-textRight">
+                            <a role="button">
+                                Date<i class="i-sort"></i>
+                            </a>
+                        </th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">0</td>
+                        <td data-label="Product">
+                            <a role="button">elit voluptate ullamco laborum</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/0
+                            </div>
+                        </td>
+                        <td data-label="Category">Toys</td>
+                        <td data-label="Price"><code>$48.70</code></td>
+                        <td data-label="Stock">122</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--info">Publish</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Concility</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-02-19 20:03</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">1</td>
+                        <td data-label="Product">
+                            <a role="button">velit tempor cillum ad</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/1
+                            </div>
+                        </td>
+                        <td data-label="Category">Outdoors</td>
+                        <td data-label="Price"><code>$65.90</code></td>
+                        <td data-label="Stock">84</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--warning">Draft</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Cognicode</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-03-24 06:15</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">2</td>
+                        <td data-label="Product">
+                            <a role="button">ea irure exercitation nulla</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/2
+                            </div>
+                        </td>
+                        <td data-label="Category">Toys</td>
+                        <td data-label="Price"><code>$69.50</code></td>
+                        <td data-label="Stock">82</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--default">Outdated</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Anivet</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-03-20 18:49</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">3</td>
+                        <td data-label="Product">
+                            <a role="button">anim consectetur esse ad</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/3
+                            </div>
+                        </td>
+                        <td data-label="Category">Movies</td>
+                        <td data-label="Price"><code>$29.00</code></td>
+                        <td data-label="Stock">44</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--default">Outdated</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Exospeed</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-01-11 22:41</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">4</td>
+                        <td data-label="Product">
+                            <a role="button">duis sint incididunt enim</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/4
+                            </div>
+                        </td>
+                        <td data-label="Category">Movies</td>
+                        <td data-label="Price"><code>$15.60</code></td>
+                        <td data-label="Stock">118</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--default">Outdated</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Pyramis</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-02-13 16:35</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">5</td>
+                        <td data-label="Product">
+                            <a role="button">qui excepteur exercitation id</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/5
+                            </div>
+                        </td>
+                        <td data-label="Category">Toys</td>
+                        <td data-label="Price"><code>$38.70</code></td>
+                        <td data-label="Stock">111</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--default">Outdated</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Bluplanet</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-03-12 23:41</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">6</td>
+                        <td data-label="Product">
+                            <a role="button">nulla laborum duis adipisicing</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/6
+                            </div>
+                        </td>
+                        <td data-label="Category">Toys</td>
+                        <td data-label="Price"><code>$52.30</code></td>
+                        <td data-label="Stock">156</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--default">Outdated</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Furnigeer</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-04-14 22:54</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">7</td>
+                        <td data-label="Product">
+                            <a role="button">culpa mollit labore Lorem</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/7
+                            </div>
+                        </td>
+                        <td data-label="Category">Toys</td>
+                        <td data-label="Price"><code>$69.60</code></td>
+                        <td data-label="Stock">133</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--default">Outdated</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Brainclip</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-03-09 08:13</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">8</td>
+                        <td data-label="Product">
+                            <a role="button">quis nulla tempor esse</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/8
+                            </div>
+                        </td>
+                        <td data-label="Category">Outdoors</td>
+                        <td data-label="Price"><code>$25.00</code></td>
+                        <td data-label="Stock">132</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--default">Outdated</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Xyqag</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-02-23 15:15</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">9</td>
+                        <td data-label="Product">
+                            <a role="button">velit Lorem veniam adipisicing</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/9
+                            </div>
+                        </td>
+                        <td data-label="Category">Clothing</td>
+                        <td data-label="Price"><code>$52.50</code></td>
+                        <td data-label="Stock">106</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--warning">Draft</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Silodyne</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-04-05 20:54</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">10</td>
+                        <td data-label="Product">
+                            <a role="button">et velit duis adipisicing</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/10
+                            </div>
+                        </td>
+                        <td data-label="Category">Clothing</td>
+                        <td data-label="Price"><code>$76.40</code></td>
+                        <td data-label="Stock">189</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--info">Publish</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Asimiline</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-03-23 11:12</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">11</td>
+                        <td data-label="Product">
+                            <a role="button">magna aliqua aute elit</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/11
+                            </div>
+                        </td>
+                        <td data-label="Category">Outdoors</td>
+                        <td data-label="Price"><code>$86.60</code></td>
+                        <td data-label="Stock">73</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--warning">Draft</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Infotrips</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-01-02 21:26</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">12</td>
+                        <td data-label="Product">
+                            <a role="button">qui deserunt minim aliqua</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/12
+                            </div>
+                        </td>
+                        <td data-label="Category">Electronics</td>
+                        <td data-label="Price"><code>$66.40</code></td>
+                        <td data-label="Stock">128</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--warning">Draft</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Pharmex</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-01-30 14:50</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">13</td>
+                        <td data-label="Product">
+                            <a role="button">anim quis elit fugiat</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/13
+                            </div>
+                        </td>
+                        <td data-label="Category">Toys</td>
+                        <td data-label="Price"><code>$22.70</code></td>
+                        <td data-label="Stock">112</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--info">Publish</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Enersave</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-03-22 01:35</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">14</td>
+                        <td data-label="Product">
+                            <a role="button">esse esse eu ullamco</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/14
+                            </div>
+                        </td>
+                        <td data-label="Category">Electronics</td>
+                        <td data-label="Price"><code>$72.60</code></td>
+                        <td data-label="Stock">27</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--warning">Draft</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Naxdis</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-03-06 12:14</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">15</td>
+                        <td data-label="Product">
+                            <a role="button">consectetur ad est adipisicing</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/15
+                            </div>
+                        </td>
+                        <td data-label="Category">Clothing</td>
+                        <td data-label="Price"><code>$63.20</code></td>
+                        <td data-label="Stock">67</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--default">Outdated</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Earthmark</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-02-18 17:20</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">16</td>
+                        <td data-label="Product">
+                            <a role="button">incididunt eu commodo aliqua</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/16
+                            </div>
+                        </td>
+                        <td data-label="Category">Electronics</td>
+                        <td data-label="Price"><code>$84.50</code></td>
+                        <td data-label="Stock">176</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--warning">Draft</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Comvex</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-02-24 17:14</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">17</td>
+                        <td data-label="Product">
+                            <a role="button">id est consectetur mollit</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/17
+                            </div>
+                        </td>
+                        <td data-label="Category">Books</td>
+                        <td data-label="Price"><code>$29.20</code></td>
+                        <td data-label="Stock">129</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--warning">Draft</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Scentric</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-04-19 22:37</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">18</td>
+                        <td data-label="Product">
+                            <a role="button">occaecat nulla amet anim</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/18
+                            </div>
+                        </td>
+                        <td data-label="Category">Outdoors</td>
+                        <td data-label="Price"><code>$37.30</code></td>
+                        <td data-label="Stock">190</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--default">Outdated</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Zilla</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-04-13 01:46</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">19</td>
+                        <td data-label="Product">
+                            <a role="button">ex culpa exercitation ea</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/19
+                            </div>
+                        </td>
+                        <td data-label="Category">Outdoors</td>
+                        <td data-label="Price"><code>$38.20</code></td>
+                        <td data-label="Stock">133</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--warning">Draft</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Globoil</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-03-17 14:45</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">20</td>
+                        <td data-label="Product">
+                            <a role="button">nostrud non elit pariatur</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/20
+                            </div>
+                        </td>
+                        <td data-label="Category">Clothing</td>
+                        <td data-label="Price"><code>$95.60</code></td>
+                        <td data-label="Stock">197</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--info">Publish</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Anarco</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-02-07 03:10</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">21</td>
+                        <td data-label="Product">
+                            <a role="button">irure non ut qui</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/21
+                            </div>
+                        </td>
+                        <td data-label="Category">Toys</td>
+                        <td data-label="Price"><code>$59.10</code></td>
+                        <td data-label="Stock">171</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--default">Outdated</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Geoform</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-04-04 10:41</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">22</td>
+                        <td data-label="Product">
+                            <a role="button">ea cillum reprehenderit est</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/22
+                            </div>
+                        </td>
+                        <td data-label="Category">Clothing</td>
+                        <td data-label="Price"><code>$32.10</code></td>
+                        <td data-label="Stock">23</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--warning">Draft</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Velity</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-03-08 02:29</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">23</td>
+                        <td data-label="Product">
+                            <a role="button">irure voluptate laborum eu</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/23
+                            </div>
+                        </td>
+                        <td data-label="Category">Movies</td>
+                        <td data-label="Price"><code>$29.10</code></td>
+                        <td data-label="Stock">20</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--info">Publish</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Quordate</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-04-12 22:01</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">24</td>
+                        <td data-label="Product">
+                            <a role="button">duis cillum aliquip occaecat</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/24
+                            </div>
+                        </td>
+                        <td data-label="Category">Movies</td>
+                        <td data-label="Price"><code>$76.10</code></td>
+                        <td data-label="Stock">144</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--warning">Draft</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Gynko</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-04-05 01:50</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">25</td>
+                        <td data-label="Product">
+                            <a role="button">qui ut in consectetur</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/25
+                            </div>
+                        </td>
+                        <td data-label="Category">Books</td>
+                        <td data-label="Price"><code>$31.50</code></td>
+                        <td data-label="Stock">183</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--default">Outdated</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Nurplex</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-01-29 09:14</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">26</td>
+                        <td data-label="Product">
+                            <a role="button">qui consectetur id adipisicing</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/26
+                            </div>
+                        </td>
+                        <td data-label="Category">Movies</td>
+                        <td data-label="Price"><code>$85.20</code></td>
+                        <td data-label="Stock">166</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--info">Publish</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Digifad</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-03-07 23:40</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">27</td>
+                        <td data-label="Product">
+                            <a role="button">sit ut ullamco sunt</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/27
+                            </div>
+                        </td>
+                        <td data-label="Category">Electronics</td>
+                        <td data-label="Price"><code>$88.40</code></td>
+                        <td data-label="Stock">56</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--default">Outdated</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Zounds</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-02-16 21:07</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">28</td>
+                        <td data-label="Product">
+                            <a role="button">deserunt consectetur commodo sunt</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/28
+                            </div>
+                        </td>
+                        <td data-label="Category">Movies</td>
+                        <td data-label="Price"><code>$37.80</code></td>
+                        <td data-label="Stock">48</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--warning">Draft</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Blurrybus</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-01-29 16:46</time>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row" class="u-hiddenDown@md">
+                            <label class="form-checkbox u-m-0">
+                                <input type="checkbox">
+                                <span class="form-checkbox__indicator"></span>
+                            </label>
+                        </th>
+                        <td data-label="ID" class="u-hiddenDown@md">29</td>
+                        <td data-label="Product">
+                            <a role="button">irure anim occaecat veniam</a>
+                            <div class="u-fs-12 u-textMuted">
+                                <i class="fa fa-link"></i> http://www.20theme.com/products/29
+                            </div>
+                        </td>
+                        <td data-label="Category">Books</td>
+                        <td data-label="Price"><code>$12.70</code></td>
+                        <td data-label="Stock">99</td>
+                        <td data-label="Status" class="u-textCenter">
+                            
+                            <span class="badge badge--info">Publish</span>
+                            
+                        </td>
+                        <td data-label="Vendor">Netagy</td>
+                        <td data-label="Date" class="u-textRight">
+                            <time class="u-fs-12 u-textMuted">2017-01-25 06:41</time>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <div class="c-panel__body l-level">
+                <div class="l-level__left is-fixed">
+                    <div class="l-level__item">
+                        <form action="#" class="form-inline">
+                            <div class="form-group">
+                                <div class="form-flex">
+                                    <select class="form-select">
+                                        <option>-- Bulk Action --</option>
+                                        <option value="publish">Publish</option>
+                                        <option value="delete">Delete</option>
+                                    </select>
+                                    <button type="button" class="form-addon btn btn--info">Apply</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="l-level__right is-auto">
+                    <div class="l-level__item">
+                        <nav class="c-pagination c-pagination--bordered">
+                            <span class="c-pagination__item is-disabled">Previous</span>
+                            <em class="c-pagination__item is-active">1</em>
+                            <a href="#" class="c-pagination__item">2</a>
+                            <a href="#" class="c-pagination__item">3</a>
+                            <a href="#" class="c-pagination__item">4</a>
+                            <a href="#" class="c-pagination__item">5</a>
+                            <span class="c-pagination__item is-disabled">...</span>
+                            <a href="#" class="c-pagination__item">99</a>
+                            <a href="#" class="c-pagination__item">100</a>
+                            <a href="#" class="c-pagination__item">Next</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="c-panel">
+            <div class="c-panel__body">
+                <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table table--data"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-hiddenDown@md"</span>&gt;</span>#ID<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span>
+                    Product Name<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"i-sort is-down"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tfoot</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-hiddenDown@md"</span>&gt;</span>#ID<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span>
+                    Product Name<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"i-sort is-down"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tfoot</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            ...
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">data-label</span>=<span class="hljs-string">"ID"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-hiddenDown@md"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">data-label</span>=<span class="hljs-string">"Product"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            ...
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+</code></pre>
+
+            </div>
+        </div>
+    </main>
+    <!-- END .l-app__main -->
+</div>
+<!-- END .l-app__body -->
+
+    </div>
+</div>
+<!-- END #app -->
+
+
+<script src="../assets/js/app.js"></script>
+
+</body>
+</html>
